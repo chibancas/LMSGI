@@ -1,0 +1,33 @@
+dipslay block transforma un eelemento de línea en uno de bloque
+display inline trasnforma un elemento de bloque en uno de línea, muy parecido al float left?
+
+
+header no tiene por que estar solo al principiop de la página.
+puede haber un header dentro de un footer, de un section o de un article
+al igual que puede haber un footer.
+
+justify content alinea el contenido del eje principal main axis
+aling intems alinea el contenido del eje cross "secundario" cross axis
+
+para usar justify content es necesario display flex y justify content permite usar space
+between o space around
+space around: centra todos los bloques de forma horizontal eliminando el espacio entre ellos
+y dejandolo a los laterales
+space between: elimina el espacio de los laterales y lo mete entre los bloques
+
+aling intems se usa cuando los elementos hijos no tienen espacio sobrante del padre.
+
+flex divide el padre dependiendo de la cifra que tengan los flex de los hijos.
+se neecesita con display flex
+h1 flex 4
+h2 flex 3
+total de partes 7
+
+
+border radius 100% hace que la imagen quede con un marco de un circulo
+
+
+flex-wrap: no wrap hace que los elementos no cambien de línea, da igual si le meto a un elemento más ancho que no los demás no van a bajr a la siguiente línea
+flex-wrap: wrap haceq que los elementos bajen la siguiente lína si no caben tods en la misma, esto se puede conseguir dandole más ancho a un elemento
+las eteiquetas i son iconos vectoriales que para aumentar su tamaño debemos usar la propiedad font-size y para cambiar su coolor usamos la propiedad color.
+placeholder sirve para poner un texto de fondo en un input

@@ -1,0 +1,11 @@
+/*Un css es un conjunto de reglas
+¿que es una regla?
+selector{
+    propiedad 1: valor1;
+    propieda 2: valor2;
+    propiedad 3: valor3;
+    propiedad n: valorn
+}*/
+body{
+    background-color: yellowgreen;
+}

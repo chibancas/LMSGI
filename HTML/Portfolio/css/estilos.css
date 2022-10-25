@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 0, 0);
+    padding: 25px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    
+}
+header nav{
+    background-color: rgba(0, 0, 0, 4);
+    text-align: center;
+    width: 60%;
+    height: 100px;
+    float: left
+}
+header nav a {
+    color: white;
+}
+header figure{
+    background-color: white;
+    width: 20%;
+    height: 100px;
+    padding: 10px;
+    border-left: 1px solid black;
+}
+herder figure img{
+    width: 100%
+}
+#registro{
+    background-color: lightblue;
+    width: 19%;
+    height: 100px;
+    float: left;
+}
+main{
+    background-color: green;
+    height: 460px;
+    clear: both;
+}
+main nav{
+    background-color: orange;
+    height: 280px;
+    width: 20%;
+    float: left;
+    padding: 8px;
+}
+main nav a{
+    color: white;
+    display: block;
+    padding: 3px;
+    font-size: 16pt;
+    width: 80%;
+    text-align: center;
+    background-color: violet;
+    margin-bottom: 5px;
+    margin: 0 auto 5px auto
+}
+main nav a:nth-child(1){
+    margin-top: 5px;
+}
+main nav a:hover{
+    transition: ease-out 1s;
+    background-color: black;
+    scale: 1.2;
+}
+main section{
+    background-color: blue;
+    width: 65%
+}
+main aside{
+    background-color: yellow ;
+    width: 15%;
+}
+
+footer{
+    background-color: black;
+    padding: 5px;
+    height: max-content;
+    padding: 10px;
+}
+footer nav a{
+    border: solid 2 px white;
+    color: white;
+    font-size: 16pt;
+}
+#mapa{
+    height: 80px;
+    background-color: red;
+    width: 50%;
+    float: left;
+}
+#redes{
+    height: 80px;
+    background-color: greenyellow;
+    width: 50%;
+    float: right;
+}
+h1{
+    border: 2px solid white;
+    margin: 10px;
+    margin-right: 200px;
+    padding: 20px;
+    border-left: 200px solid blue;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    /* para controlar la opacidad del color 
+    de fondo o de las letras no uses opacity, usa rgba */
+    font-size: 30px;
+    font-weight: lighter;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    border-top-left-radius: 20px;
+}
+p{
+    border: red solid 2px;
+    text-align: justify;
+    line-height: 1.8;
+    text-indent: 20px;
+}
+
