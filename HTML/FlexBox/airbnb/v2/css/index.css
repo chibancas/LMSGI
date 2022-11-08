@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+header{
+    background-image: url(../img/header.jpg);
+    height: 683px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    height: max-content;
+}
+header nav#viaje{
+    /* flex: 4; */
+    width: 20%;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+header nav#experiencias{
+    justify-content: space-around;
+    /* flex: 8; */
+    width: 60%;
+}
+header nav#propietario{
+    /* flex: 4; */
+    width: 20%;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+header nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+
+header form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: max-content;
+    background-color: white;
+    align-items: center;
+    height: max-content;
+    border-radius: 35px;
+    padding: 10px;
+    border: 2px solid black;
+}
+header form div.campo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
+    padding: 5px;
+}
+header form div label{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    color: black;
+    width: 100%;
+}
+header form div input{
+    height: 20px;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+}
+header form div button{
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px 0px;
+    height: 50px;
+}
+header h2{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+header button{
+    width: 20%;
+    color: white;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50px;
+    background-color: brown;;
+}
