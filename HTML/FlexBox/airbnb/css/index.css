@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
+body > header {
     background-image: url(./../img/header.jpg);
     height: 683px ;
     display: flex;
@@ -99,12 +99,70 @@ header button {
     padding: 0 20px;
     border-radius: 20px;
 }
-main section{
+main{
+    padding-top: 20px;
+    display: flex;
+    flex-flow: wrap;
 
 }
-main section article{
 
+main section#alojamientos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 }
-main section article figure img{
-    height:120px
+main > section#alojamientos > header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+main section#alojamientos header h2{
+    width: 100%;
+    text-align: left;
+    height: max-content;
+}
+main section#alojamientos article{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 22%;
+}
+main section#alojamientos article h4{
+    height: max-content;
+    font-size: 18px;
+}
+main section#alojamientos article p{
+    height: max-content;
+    align-items: flex-start;
+    font-size: 15px;
+}
+main section#alojamientos article figure{
+    height: 100%;
+    width: max-content;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: flex-end;
+}
+main section#alojamientos article figure img{
+    height:130px;
+}
+
+main section#vivir{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: blue;
+    margin: 0 auto;
+}
+main section#vivir header{
+    display: flex;
+}
+main section#vivir header h3{
+    text-align: center;
+    background-color: white;
 }

@@ -31,3 +31,11 @@ flex-wrap: no wrap hace que los elementos no cambien de línea, da igual si le m
 flex-wrap: wrap haceq que los elementos bajen la siguiente lína si no caben tods en la misma, esto se puede conseguir dandole más ancho a un elemento
 las eteiquetas i son iconos vectoriales que para aumentar su tamaño debemos usar la propiedad font-size y para cambiar su coolor usamos la propiedad color.
 placeholder sirve para poner un texto de fondo en un input
+
+display: flex; el display flex sobra porque ya lo hereda del padre
+solo se deben de añadir atriutos nuevos o que se quieran modificar en
+uno de los hermanos.
+
+uvw
+hw
+son tamaños respecto al ancho de la ventana de donde se este visualizando la web

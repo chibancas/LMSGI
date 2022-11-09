@@ -39,7 +39,6 @@ header nav{
     justify-content: center;
     align-items: center;
     height: 70px;
-
 }
 header nav a{
     color: white;
@@ -49,10 +48,9 @@ header nav a{
     background-color: rgba(255, 0, 0, 0.4);
     text-align: center;
     margin-right: 100px;
-    padding: 10px;
     border-radius: 10px;
     border: solid 3px yellow;
-    box-shadow: maroon 4px 2px 25px 1px;
+    box-shadow: yellowgreen 4px 4px 25px 3px;
 }
 
 header div#search{
@@ -159,22 +157,26 @@ main section article{
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 main section article figure{
-    width: 40%;
+    width: 60%;
 }
 main section article figure img{
-    min-width: 40%;
-    max-width: 70%;
+    height: 100px;
 }
 main section article p{
     text-align: justify;
-    width: 50%;
+    width: 35%;
+    font-size: 20px;
 }
 main section article button{
     width: 80%;
     margin: 0 auto;
+    color: white;
+    background-color: black;
+    border: white 2px solid;
+    box-shadow: 5px 5px 5px black;
 }
 footer{
     display: flex;
