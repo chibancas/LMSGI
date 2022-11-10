@@ -39,3 +39,18 @@ uno de los hermanos.
 uvw
 hw
 son tamaños respecto al ancho de la ventana de donde se este visualizando la web
+
+
+git init (se hace en el repositorio)
+git remote add origin https://github.com/chibancas/LMSGI.git
+se añade el repositorio
+
+
+git checkout -b master
+crea la rama y nos sitúa en ella??
+
+git branch no funciona
+sirve para ver las ramas en el repo
+
+git add . (añadir todo el contenidoa una caja)
+git commit -m (etiquetar la caja)
