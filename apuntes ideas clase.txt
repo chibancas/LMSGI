@@ -46,6 +46,7 @@ git remote add origin https://github.com/chibancas/LMSGI.git
 se añade el repositorio
 
 
+github
 git checkout -b master
 crea la rama y nos sitúa en ella??
 
