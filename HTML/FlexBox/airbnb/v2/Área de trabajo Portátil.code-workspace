@@ -7,5 +7,7 @@
 			"path": "../../../../../Morgado"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Juan_Jose"
+	}
 }
