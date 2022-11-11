@@ -118,3 +118,24 @@ main>section#alojamiento>header{
     align-self: center;
     font-size: 18px;
 }
+main>section#alojamiento article{
+    display: flex;
+    flex-flow: column wrap;
+}
+main>section#alojamiento article figure{
+    height: 100%;
+    background-color: black;
+}
+main>section#alojamiento article figure img{
+    background-color: black;
+    border: 2px black;
+}
+main>section#alojamiento article h4{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main>section#alojamiento article p{
+    height: 50%;
+}
