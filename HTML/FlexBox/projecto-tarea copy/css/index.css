@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header nav#contact{
+    width: 50%;
+    padding: 15px;
+}
+header nav#contact a{
+    margin-right: 20px;
+}
+header nav#social{
+    width: 50%;
+    text-align: right;
+    padding: 15px;
+}
+header nav#social a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+header nav#social i{
+    color: black;
+    font-size: 30px;
+}
+header figure{
+    background-color: black;
+    padding: 20px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav#main{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+header nav#main a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    padding: 40px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header nav#main a:hover{
+    transition: 0.5s;
+    opacity: 50%;
+    /* background-color: white; */
+    border-radius: 15px;
+    /* color: black; */
+}
+header nav#main a:not(hover){
+    transition: 1s;
+}
+header nav#main a i{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+    order: 1;
+    color: green;
+}
+header nav#main a:hover i{
+    transition: 1s;
+    transform: translateY(-50px);
+}
+header nav#main a:not(hover) i{
+    transition: 1s;
+}
+header nav#main a:hover label{
+    transition: 1s;
+    transform: translateY(30px);
+}
+header nav#main a:hover:nth-child(3) label{
+    transform: translateY(65px);
+
+}
+header nav#main a:not(hover) label{
+    transition: 1s;
+}
+header nav#main a:nth-child(1):hover label{
+    transform: translateY(20px);
+}
+header nav#main a:nth-child(1):hover i{
+    transform: translateY(-20px);
+}
+
+header nav#main a:nth-child(1) label{
+    order: 2
+}
+header nav#main a:nth-child(1) i{
+    order: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main div#title{
+    background-color: orange;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+main div#title h1{
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+}
+main div#title nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
+    background-color: orange;
+}
+main div#title nav a{
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+main div#title nav a:last-child{
+    margin-right: 10px;
+    color: black;
+    background-color: white;
+    font-weight: 900;
+}
+main div#title nav label{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;;
+    font-size: 40px;
+    font-weight: 900;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main section article{
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 4px black;
+    border-radius: 15px;
+    padding: 10px;
+}
+main section article figure{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+main section article figure img{
+    height: 80%;
+}
+main article h4{
+    font-size: 30px;
+    width: 100%;
+    text-align: left;
+    color: blue;
+
+}
+main article p{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Satisfy', cursive;
+}
+main article.down{
+    margin-top: 15px;
+}
