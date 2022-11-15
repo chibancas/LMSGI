@@ -3,12 +3,17 @@
     padding: 0; 
     margin: 0;
 }
-@media (min-width: 600px){
+@media (min-width:0px) and (max-width: 499px){
+    body{
+        background-color: burlywood;
+    }
+}
+@media (min-width: 500px) and (max-width:770px){
     body{
         background-color: black;
     }
 }
-@media (min-width: 800px){
+@media (min-width: 771px){
     body{
         background-color: orange;
     }
