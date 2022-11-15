@@ -2,6 +2,12 @@
     "folders": [
         {
             "path": "../../../.."
+        },
+        {
+            "path": "../../../../../Morgado"
         }
-    ]
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Juan_Jose"
+    }
 }
