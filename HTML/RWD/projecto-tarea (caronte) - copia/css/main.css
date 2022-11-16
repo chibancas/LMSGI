@@ -40,35 +40,26 @@ a{
         padding-right: 10px
     }
     body main section{
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         background-color: white;
-        padding-top: 15px;
+        padding: 5px;
     }
     body main section article{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        /* height: 200px; */
+        flex-wrap: nowrap;
         width: 100%;
         justify-content: flex-start;
-
+        border: solid 1px black;
+        margin-bottom: 10px;
     }
     body main section article figure{
-        width: max-content
+        width: 30%;
+        background-color: orange;
     }
     body main section article figure img{
         height: 150px;
-    }
-    body main section article h3{
-        width: max-content;
-    }
-    main section article p{
-        padding: 10px 15px 10px 10px;
-        font-size: 15px;
-        text-align: justify;
-        width: 100%;
-        background-color: bisque;
-        width: 70%;
+        background-color: black;
     }
 }
 
