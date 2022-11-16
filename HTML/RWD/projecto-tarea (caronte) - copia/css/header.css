@@ -161,14 +161,21 @@ body {
 
 @media screen and (min-width: 900px) {
     header nav#contacto{
-        width: 50%;
         height: 40px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
     }
+
     header nav#sociales{
-        width: 50%;
         height: 40px;
         display: flex;
         align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
     }
     header nav#sociales a{
         padding-top: 10px;

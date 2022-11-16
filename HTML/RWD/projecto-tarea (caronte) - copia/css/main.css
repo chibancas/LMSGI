@@ -1,0 +1,101 @@
+* { 
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (min-width: 0px) {
+    body main{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    body main header{
+        flex-flow: column wrap;
+        text-align: left;
+        align-items: flex-start;
+        background-color: rgba(255, 255, 0, 0.548)
+    }
+    body main header h1{
+        color: black;
+        font-weight: 900;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+    }
+    body main header nav{
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    body main header nav a{
+        color: brown;
+    }
+    body main header nav a:last-child{
+        color: black;
+    }
+    body main header nav span{
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    body main section{
+        flex-flow: column wrap;
+        background-color: white;
+        padding-top: 15px;
+    }
+    body main section article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* height: 200px; */
+        width: 100%;
+        justify-content: flex-start;
+
+    }
+    body main section article figure{
+        width: max-content
+    }
+    body main section article figure img{
+        height: 150px;
+    }
+    body main section article h3{
+        width: max-content;
+    }
+    main section article p{
+        padding: 10px 15px 10px 10px;
+        font-size: 15px;
+        text-align: justify;
+        width: 100%;
+        background-color: bisque;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 650px){
+    body main header{
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    body main header h1{
+        padding: 0px;
+        display: block;
+        width: max-content;
+        width: 50%;
+        padding-left: 10px;
+    }
+    body main header nav{
+        flex-flow: row nowrap;
+        width: max-content;
+        width: 50%;
+        justify-content: flex-end;
+    }
+}
+@media screen and (min-width: 900px){
+    body main header h1{
+        padding-left: 50px;
+    }
+    body main header nav{
+        padding-right: 100px;
+    }
+}
