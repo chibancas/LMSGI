@@ -11,3 +11,4 @@ sirve para ver las ramas en el repo
 
 git add . (añadir todo el contenidoa una caja)
 git commit -m (etiquetar la caja)
+git push
