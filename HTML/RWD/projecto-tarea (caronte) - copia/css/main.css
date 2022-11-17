@@ -59,10 +59,12 @@ a{
         flex-flow: row nowrap;
         justify-content: center;
         height:max-content;
+        background-color: violet;
     }
     body main section article figure img{
         height: 150px;
         padding: 5px;
+        background-color: darkblue;
     }
     body main section article div#cuerpo{
         width: max-content;
