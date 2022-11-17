@@ -116,6 +116,21 @@ body {
         padding-top: 10px;
         padding-left: 10px;
     }
+    header nav#contacto a{
+        padding: 10px;
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-around;
+    }
+    header nav#contacto a span{
+        display: flex;
+        order: 2;
+    }
+    header nav#contacto a i{
+        display: flex;
+        padding-right: 5px;
+        order: 1;
+    }
     header nav#sociales{
         width: 100%;
     }
@@ -168,6 +183,7 @@ body {
         display: flex;
         justify-content: flex-start;
         width: 80%;
+        font-size: 20px;
     }
 
     header nav#sociales{
