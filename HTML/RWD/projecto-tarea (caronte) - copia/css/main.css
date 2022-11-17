@@ -34,6 +34,7 @@ a{
     }
     body main header nav a:last-child{
         color: black;
+        font-weight: 900;
     }
     body main header nav span{
         padding-left: 10px;
@@ -41,7 +42,6 @@ a{
     }
     body main section{
         flex-flow: row wrap;
-        background-color: white;
         padding: 5px;
     }
     body main section article{
@@ -54,12 +54,33 @@ a{
         margin-bottom: 10px;
     }
     body main section article figure{
-        width: 30%;
-        background-color: orange;
+        width: max-content;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        height:max-content;
     }
     body main section article figure img{
         height: 150px;
-        background-color: black;
+        padding: 5px;
+    }
+    body main section article div#cuerpo{
+        width: max-content;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    body main section article div#cuerpo h3{
+        width: 100%;
+        display: flex;
+        height: max-content;
+        font-size: 35px;
+    }
+    body main section article div#cuerpo p{
+        width: 100%;
+        text-align: justify;
+        text-indent: 25px;
+        padding: 10px;
+        font-size: 20px;
     }
 }
 
@@ -80,7 +101,12 @@ a{
         width: max-content;
         width: 50%;
         justify-content: flex-end;
+        font-size: 25px
     }
+    body main section{
+        flex-flow: row wrap;
+    }
+
 }
 @media screen and (min-width: 900px){
     body main header h1{
