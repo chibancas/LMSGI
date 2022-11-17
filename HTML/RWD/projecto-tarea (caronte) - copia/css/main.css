@@ -62,7 +62,6 @@ a{
         background-color: black;
     }
 }
-
 @media screen and (min-width: 650px){
     body main header{
         flex-flow: row nowrap;
