@@ -116,37 +116,6 @@ a{
         justify-content: center;
         border: solid black 3px;
     }
-    header nav#ppal a:hover{
-        background-color: transparent;
-    }
-    header nav#ppal a:hover i{
-        transition: 1s;
-        transform: translateY(35px);
-    }
-    header nav#ppal a:hover span{
-        transition: 1s;
-        transform: translateY(-35px);
-    }
-    
-    header nav#ppal a:nth-child(1):hover i{
-        transition: 1s;
-        transform: translateY(-35px);
-    }
-
-    header nav#ppal a:nth-child(1):hover i{
-        transition: 1s;
-        transform: translateY(-35px);
-    }
-    header nav#ppal a:not(hover) i{
-        transition: 1s;
-    }
-    header nav#ppal a:nth-child(1):hover span{
-        transition: 1s;
-        transform: translateY(35px);
-    }
-    header nav#ppal a:not(hover) span{
-        transition: 1s;
-    }
 
 }
 @media screen and (min-width: 900px){
