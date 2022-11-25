@@ -1,0 +1,259 @@
+* { 
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+.contorno {
+    border: 1px solid red;
+}
+.negro {
+    background-color: black;
+}
+
+body {
+    background-color: rgba(0,0,0,.2);
+}
+@media screen and (min-width: 0px) {
+    header figure h4{
+        display: none;
+    }
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+    header {
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-around;
+       align-items: center;
+       background-color: black;
+       width: 100%;
+    }
+    header nav#sociales {
+        width: 100%;
+        padding: 10px;
+        background-color: ghostwhite;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    header nav#sociales a{
+        font-size: 30px;
+        padding-right: 10px;
+        border: solid 1px black;
+        padding: 10px;
+        margin-right: 15px;
+        border-radius: 15px;
+    }
+    header nav#contacto {
+        display: none;
+    }
+    header figure {
+        height: 100px;
+    }
+    header figure img{
+        height: 90%;
+    }
+
+
+    header h1 {
+        width: 60%;
+        font-size: 40px;
+        color: whitesmoke;
+    }
+    header button{
+        height: 50px;
+        font-size: 30px;
+        padding: 10px;
+        background-color: transparent ;
+        color: whitesmoke;
+        border: 0;
+        /* color: white; */
+    }
+    header #ppal{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        width: 95%;
+    }
+    header #ppal a {
+        padding: 5px;
+        border: 1px solid white;
+        margin-bottom: 5px;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    header #ppal a:hover {
+        background-color: yellow;
+    }
+    header #ppal a span {
+        font-size: 25px;
+    }
+    header #ppal a i {
+        display: none;
+    }
+    header nav#ppal a#portfolio{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    header figure h4{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    header nav#ppal a#portfolio{
+        display: flex;
+    }
+    header nav#contacto{
+        display: flex;
+        background-color: white;
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    header nav#contacto a{
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-around;
+    }
+    header nav#contacto a span{
+        display: flex;
+        order: 2;
+    }
+    header nav#contacto a i{
+        display: flex;
+        padding-right: 5px;
+        order: 1;
+    }
+    header nav#sociales{
+        width: 100%;
+        
+    }
+    header nav#sociales a{
+        border: none;
+    }
+    header figure{
+        display: flex;
+        justify-content: flex-end;
+        width: 35%;
+    }
+    header h1{
+        display: flex;
+        justify-content: flex-start;
+        width: 65%;
+    }
+    header nav#ppal{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    header nav#ppal a{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: none;
+    }
+    header nav#ppal a i{
+        display: block;
+        order: 1;
+        width: 100%;
+        text-align: center;
+        color: green;
+        font-size: 40px;
+    }
+    header nav#ppal a span{
+        width: 100%;
+        order: 2;
+        font-size: 25px;
+        text-align: center;
+    }
+    header nav#ppal a:hover{
+        background-color: transparent;
+    }
+    header nav#ppal a:hover i{
+        transition: 1s;
+        transform: translateY(35px);
+    }
+    header nav#ppal a:hover span{
+        transition: 1s;
+        transform: translateY(-35px);
+    }
+    
+    header nav#ppal a:nth-child(1):hover i{
+        transition: 1s;
+        transform: translateY(-35px);
+    }
+
+    header nav#ppal a:nth-child(1):hover i{
+        transition: 1s;
+        transform: translateY(-35px);
+    }
+    header nav#ppal a:not(hover) i{
+        transition: 1s;
+    }
+    header nav#ppal a:nth-child(1):hover span{
+        transition: 1s;
+        transform: translateY(35px);
+    }
+    header nav#ppal a:not(hover) span{
+        transition: 1s;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    header nav#contacto{
+        height: 40px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    header nav#sociales{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+    }
+    header nav#sociales a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border: none;
+    }
+    header figure{
+        width: 30%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    header figure img{
+        width: max-content;
+    }
+    header figure h4{
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+    header h1{
+        display: none;
+    }
+    header nav#ppal{
+        width: 70%;
+        height: 150px;
+        align-items: center;
+    }
+}
