@@ -1,0 +1,35 @@
+* { 
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+header{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100px 200px 300px;
+    grid-template-columns: 2fr 7fr 1fr;
+    grid-template-areas: 
+    "contacto sociales sociales"
+    "logo titulo1 navicon"
+    "navppal navppal navppal";
+}
+header#contacto{
+    grid-area: contacto;
+    display: none;
+}
+header#sociales{
+    grid-area: sociales;
+}
+header#logo{
+    grid-area: logo;
+    height: 100px;
+}
+header h1{
+    grid-area: titulo1;
+}
+header button{
+    grid-area: navicon;
+}
+header nav#ppal{
+    grid-area: navppal;
+}

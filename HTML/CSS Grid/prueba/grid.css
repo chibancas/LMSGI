@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin-right: 0px;
+}
+.articulo{
+    background-color: orange;
+    color: darkblue;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+section{
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px; */
+    /* grid-template-columns: 20% 60% 20%; */
+    /* grid-template-columns: 4fr repeat(2, 8fr) 4fr; */
+    gap: 10px;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(5, 20%)
+}
+
+/* article#hijo1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+} */

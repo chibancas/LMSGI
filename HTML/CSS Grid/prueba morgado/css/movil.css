@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    grid-template-areas:
+    "logo titulo registro"
+    "navppal navppal navppal";
+    grid-template-columns: 2fr 7fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+header{
+    background-color: darkblue;
+    padding: 50px;
+    border: solid 5px black;
+}
+header figure{
+    background-color: orange;
+    gap: 5px;
+    grid-area: logo;
+}
+header h1{
+    grid-area: titulo;
+    background-color: yellow;
+}
+header#registro{
+    grid-area: registro;
+    background-color: black;
+}
+header#nav{
+    grid-area: navppal;
+    background-color: purple;
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    "cabmain cabmain cabmain cabmain cabmain"
+    "navcat productos productos info"
+    ".      .         resumen   resumen";
+    grid-template-columns: 20% 30% 40% 10%;
+    grid-template-rows: 100px 500xp 50px;
+    gap: 5px;
+    padding: 5px;
+    background-color: red;
+}
+main header{
+    grid-area: cabmain;
+    background-color: bisque;
+}
+main #catege
