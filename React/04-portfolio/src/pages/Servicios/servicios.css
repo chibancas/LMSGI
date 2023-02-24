@@ -1,0 +1,11 @@
+nav.submenu{
+    width: min-content;
+    font-size: 20px;
+    align-content: space-around;
+}
+nav.submenu a{
+    background-color: darkblue;
+    margin: 10px;
+    text-align: center;
+    border: white solid 2px;
+}

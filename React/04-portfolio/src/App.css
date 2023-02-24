@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+body{
+    display: flex;
+    flex-flow: nowrap row;
+}
+header{
+    background-color: darkblue;
+    display: flex;
+    flex-flow:column;
+    width: 20%;
+}
+main{
+    background-color: orange;
+    width: 50%;
+}
+div#intro{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
