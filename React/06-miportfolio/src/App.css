@@ -84,6 +84,15 @@ main section.body {
   border: 2px solid black;
   border-radius: 5px;
   background-color: rgba(0,0,0,0.2);
+  display: flex;
+  flex-flow: row wrap;
+}
+.equipos .equipo span{
+  width: 100%;
+  text-align: center;
+}
+.equipos .equipo span:nth-child(3)::after{
+  content: '€';
 }
 .equipo h3 {
   padding: 3px;

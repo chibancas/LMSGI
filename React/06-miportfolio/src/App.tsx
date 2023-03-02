@@ -16,7 +16,7 @@ import { CloudPage } from './pages/Servicios/pages/Cloud';
 import { HomePage } from './pages/Home/Home';
 import OrdenadoresListCard from './pages/Ordenadores/OrdenadoresListCard';
 
-function App() {
+export const App=()=>{
   return (
     <>
       <div className='container'>
@@ -41,9 +41,9 @@ function App() {
           </Route>
           <Route path='equipos' element={<OrdenadoresListCard />} />
         </Routes>
-        
       </div>
-    </>
+  </>
+
   );
 }
 
