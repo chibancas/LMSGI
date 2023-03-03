@@ -1,0 +1,9 @@
+header{
+    height: 120px;
+    background-color: black;
+}
+header h1{
+    color: red;
+    text-align: center;
+    font-size: 100px;
+}

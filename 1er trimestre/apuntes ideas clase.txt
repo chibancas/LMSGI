@@ -44,3 +44,5 @@ son tamaños respecto al ancho de la ventana de donde se este visualizando la we
 git init (se hace en el repositorio)
 git remote add origin https://github.com/chibancas/LMSGI.git
 se añade el repositorio
+
+COMIENZO 2º TRIMESTRE

@@ -1,0 +1,15 @@
+footer{
+    background-color: silver;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+footer h3{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    width: 100%;
+}
+footer div{
+    font-size: 100px;
+}
