@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: yellowgreen;
+    width: 100%;
+    justify-content: flex-end;
+}
+header h1{
+    background-color:black;
+    color: white;
+    height: max-content;
+    order: 1;
+}
+header figure{
+    width: 15%;
+    order: 2;
+}
+header figure img{
+   border-radius: 450px;
+   border: 2px solid black;
+   background-color: lightblue;
+   padding: 5px
+}
