@@ -1,50 +1,45 @@
 header{
-    /* height: 20vh; */
     border-radius: 0 !important;
     border: none !important;
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
     background-color: silver;
-    background-position: center right ;
-    background-size:contain;
-    background-repeat: no-repeat;
-    animation: color-changer 5s infinite ease-in-out;
+    animation: color-changer 3s infinite ease-in-out;
+    gap: 2vh;
+    justify-content: center;
     align-items: center;
     text-align: justify;
     padding: 3vh;
+    margin-bottom: 4vh !important;
 }
     @keyframes color-changer {
         0% {
-            background-color: gold;
-            border-radius:1vh;
-            border: 2vh violet solid;
-            
+            background-color: silver;            
+        }
+        25% {
+            background-color: rgba(192, 192, 192, 0.3);
         }
         50% {
-            background-color: blue;
-            border-radius:4vh;
-            border: 2vh blue solid;
+            background-color: rgba(192, 192, 192, 0.6);
         }
-        75%{
-            border-radius:8vh;
-            border: 2vh green solid;
+        75% {
+            background-color: rgba(192, 192, 192, 0.9);
         }
         100%{
             background-color: silver;
-            border-radius:1vh;
-            border: 2vh violet solid;
         }
     }
 header figure#logo{
-    order: 1;
-    background-color: silver;
-    width: 30%;
+    margin-top:200px;
+    background-color: goldenrod;
     padding: 3vh;
     border-radius:1vh;
-    animation: color-changer 5s infinite ease-in-out;
-    border: 1vh violet solid;
+    width: 15%;
+    order: 1;
 }
-header figure h1{
+header figure#logo h1{
+    text-align: center;
     text-shadow: 2px 2px 0 white,
     4px 4px 0 black,
     6px 6px 0 silver;
@@ -52,7 +47,7 @@ header figure h1{
     width: 100%;
 }
 header figure#logo img{
-    animation: rotar 3s infinite linear;   
+    animation: rotar 10s infinite linear;   
 }
     @keyframes rotar {
         0%{
@@ -69,17 +64,19 @@ header figure#logo img{
         }
         
     }
-header figure#mst{
-    order: 3;
+header figure.mst{
+    width: 25%;
     display: flex;
     align-items: center;
     padding: 1vh;
+    position: relative;
+    order: 2;
 }
-header figure#mst img{
+header figure.mst img{
     border-radius: 1vh;
     animation: bordes 3s infinite ease-in-out;
     border: .8vh black solid;
-    width: 45vh
+    width: 100%;
 }
     @keyframes bordes{
         0%{
@@ -97,12 +94,48 @@ header figure#mst img{
         }
     }
 header p{
-    order: 4;
-    width: 60vh;
-    width: max-content;
-    font-size: 2.5vh;
-    padding: 2vh;
+    order: 3;
+    font-size: 3vh;
+    width: 55%;
+    padding:1vh;
+    font-weight: 500;
 }
 header p::first-letter{
-    font-size: 30px;
+    font-size: 7vh;
+    font-weight: boldder;
+}
+header nav{
+    width: 100%;
+    background-color: silver;
+    order: 4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1vh;
+    padding: 2vh !important;
+}
+header nav a{
+    width: max-content;
+    background-color: rgba(0, 0, 139, 0.3);
+    color: white;
+    text-decoration: none;
+    width: 35%;
+    text-align: center;
+    font-size: 5vh;
+    border: solid .4vh blue;
+}
+header nav a:hover{
+    transition: .5s ease-in-out;
+    background-color: rgba(0, 0, 139, .6);
+    border: .4vh solid black;
+    border-radius: 1vh;
+}
+header nav a:not(hover){
+    transition: .5s ease-in-out;
+    background-color: rgba(0, 0, 139, 0.3);
+    border: none;
+    border-radius: 0;
+}
+header nav a:focus{
+    background-color: black;
 }
