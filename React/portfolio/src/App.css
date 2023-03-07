@@ -1,0 +1,105 @@
+*{
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  font-family: 'Times New Roman', Times, serif !important
+}
+body{
+  background-color: silver;
+}
+section#home{
+  background-color: silver;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1vh !important;
+  justify-content: center;
+  align-items: center;
+}
+section#home p{
+  text-align: justify;
+  font-size: 5vh;
+  width: 75%;
+  font-weight: 500;
+  margin-top: 3vh !important;
+  margin-bottom: 3vh !important;
+}
+section#home figure{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 5vh;
+  border-radius: 2vh;
+}
+section#home figure img{
+  width: 45%;
+}
+section#home figure .fotos{
+  filter: blur(10px);
+  border-radius: 2vh;
+  border: solid .5vh white;
+}
+section#home figure .fotos:hover{
+  transition: .4s ease-in-out;
+  filter: blur(0);
+}
+section#home figure .fotos:not(hover){
+  transition: .4s ease-in-out;
+  filter: blur(10px);
+  border-radius: 2vh;
+  border: solid .5vh white;
+
+}
+section#home figure img#morgado{
+  order: 3;
+}
+section#home figure img#asir{
+  order: 2;
+}
+section#home figure img#react{
+  order: 1;
+}
+
+
+
+
+
+
+
+
+
+
+section#contacto{
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+section#contacto nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 100px !important;
+  background-color: gray;
+}
+section#contacto nav a{
+  text-decoration: none;
+  color: white;
+}
+section#contacto h2{
+  color: white;
+}
+section#contacto img{
+  width: 50%;
+}
+section#yt{
+  width: 33%;
+  background-color: white;
+}
+section#fb{
+  width: 33%;
+  transform: translateX(99%);
+  justify-content: center;
+  background-color: white;
+}
+section#gh
