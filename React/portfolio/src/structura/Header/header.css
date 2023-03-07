@@ -1,48 +1,38 @@
 header{
     /* height: 20vh; */
     border-radius: 0 !important;
-    border: none !important;
     display: flex;
     width: 100%;
-    background-color: silver;
-    background-position: center right ;
-    background-size:contain;
-    background-repeat: no-repeat;
-    animation: color-changer 5s infinite ease-in-out;
+    background-color: black;
+   animation: color-changer 3s infinite ease-in-out;
     align-items: center;
     text-align: justify;
     padding: 3vh;
 }
     @keyframes color-changer {
         0% {
+            background-color: black;
+        }
+        25%{
             background-color: gold;
-            border-radius:1vh;
-            border: 2vh violet solid;
-            
         }
         50% {
-            background-color: blue;
-            border-radius:4vh;
-            border: 2vh blue solid;
+            background-color: silver;
         }
         75%{
-            border-radius:8vh;
-            border: 2vh green solid;
+            background-color: lightcoral;
         }
         100%{
-            background-color: silver;
-            border-radius:1vh;
-            border: 2vh violet solid;
+            background-color: black;
         }
     }
 header figure#logo{
     order: 1;
-    background-color: silver;
-    width: 30%;
+    flex: 3/12;
     padding: 3vh;
     border-radius:1vh;
+    background-color: black;
     animation: color-changer 5s infinite ease-in-out;
-    border: 1vh violet solid;
 }
 header figure h1{
     text-shadow: 2px 2px 0 white,
@@ -70,16 +60,17 @@ header figure#logo img{
         
     }
 header figure#mst{
+    flex: 12/12;
     order: 3;
     display: flex;
     align-items: center;
     padding: 1vh;
+    background-color: black;
 }
 header figure#mst img{
     border-radius: 1vh;
     animation: bordes 3s infinite ease-in-out;
     border: .8vh black solid;
-    width: 45vh
 }
     @keyframes bordes{
         0%{
@@ -98,11 +89,10 @@ header figure#mst img{
     }
 header p{
     order: 4;
-    width: 60vh;
+    width: 30%;
     width: max-content;
     font-size: 2.5vh;
     padding: 2vh;
-}
-header p::first-letter{
-    font-size: 30px;
+    color: white;
+    background-color: darkblue;
 }
