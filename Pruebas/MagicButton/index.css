@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+
+}
+header,main,footer{
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+}
+header{
+    height: 33%;
+    padding: 30px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 80px;
+    background-color: darkblue;
+    padding: 15px;
+    color: white;
+    border: 3px white solid;
+    border-radius: 15px;
+    height: max-content;
+}
+main{
+    background-color: darkred;
+    display: flex;
+    flex-flow: row wrap;
+    height: 33.5%;
+    justify-content: center;
+    align-content: center;
+}
+main div{
+    background-color: darkslategrey;
+    padding: 10px;
+}
+main div h3{
+    background-color: goldenrod;
+    font-size: 60px;
+    text-align: center;
+}
+
+main div ul{
+    font-size: 50px;
+    list-style-position: inside;
+}
+main div button{
+    width: 100%;
+    font-size: 50px;
+    border: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    cursor:pointer;
+}
+main div button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg,red,black,blue,violet,gold,silver);
+    background-size: 800%;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    @keyframes glowing{
+        0%{ background-position: 0 0}
+        50%{ background-position: 400% 0 }
+        100{ background-position: 800% 0 }
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 33%;
+}
