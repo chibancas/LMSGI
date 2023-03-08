@@ -9,6 +9,7 @@ import { HomePage } from './pages/Home/Home'
 import { ContactoPage } from './pages/Contacto/Contacto'
 import { YtPage } from './pages/Contacto/Yt'
 import { FbPage } from './pages/Contacto/Fb'
+import { GhPage } from './pages/Contacto/Gh'
 
 export const App = () => {
   return (
@@ -21,7 +22,7 @@ export const App = () => {
           <Route path='contacto' element={<ContactoPage/>}>
             <Route path='yt' element={<YtPage/>}/>
             <Route path='fb' element={<FbPage/>}/>
-
+            <Route path='gh' element={<GhPage/>}/>
           </Route>
         </Routes>
     </>

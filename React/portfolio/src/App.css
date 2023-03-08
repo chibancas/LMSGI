@@ -81,10 +81,12 @@ section#contacto nav{
   width: 100%;
   gap: 100px !important;
   background-color: gray;
+  font-size: 4vh;
+  font-weight: 600;
 }
 section#contacto nav a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 section#contacto h2{
   color: white;
@@ -94,7 +96,6 @@ section#contacto img{
 }
 section#yt{
   width: 33%;
-  background-color: white;
 }
 section#fb{
   width: 33%;
@@ -102,4 +103,11 @@ section#fb{
   justify-content: center;
   background-color: white;
 }
-section#gh
+section#gh{
+  width: 33%;
+  background-color: white;
+  transform: translateX(209%);
+}
+section{
+  background-color: gray;
+}

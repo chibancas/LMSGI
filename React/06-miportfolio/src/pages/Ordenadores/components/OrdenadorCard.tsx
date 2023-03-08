@@ -18,7 +18,7 @@ export const OrdenadorCard:FC<Inputdata> = ({equipo}) => {
   return (
     <div className='equipo'>
       <h2>{equipo.nombre}</h2>
-      <span>{equipo.marca}</span>
+      <p>{equipo.descripcion}</p>
       <span>{equipo.precio.real}</span>
     </div>
   )
