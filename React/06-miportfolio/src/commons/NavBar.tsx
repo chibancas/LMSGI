@@ -12,18 +12,12 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 import { makeStyles } from '@material-ui/core';
 import { red } from '@mui/material/colors';
 
-const useStyle=makeStyles({
-  miBoton:{
-    border:10,
-    padding:10,
-  }
-});
-const estilos=useStyle();
+
 export const NavBar = () => {
   return (
     <nav>
         <Link to='home'>
-          <Button className={estilos.miBoton} color='error' startIcon={<HomeIcon/>}>Home</Button>
+          <Button color='error' startIcon={<HomeIcon/>}>Home</Button>
         </Link>
         <Link to='servicios'>
           <Button color='error' startIcon={<LocalOfferIcon/>}>Servicios</Button>
