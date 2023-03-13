@@ -26,7 +26,7 @@ export const App=()=>{
         <Routes>
           <Route path='/' element= {<Main></Main>}>
             <Route path='home' element={ <HomePage />} />  
-            <Route path='servicios' element={ <ServiciosPage />} >
+            <Route path='servicios' element={ <ServiciosPage />}>
               <Route path='cloud' element={ <CloudPage />} />  
               <Route path='dweb' element={ <WebPage />} />    
             </Route>

@@ -6,7 +6,7 @@ export const GhPage = () => {
   return (
     <section id="gh">
         <figure>
-            <img src={logogh}/>
+            <img id='logoGH' src={logogh}/>
         </figure>
         <h2>
             Mis trabajos.
