@@ -1,12 +1,20 @@
-
-@media (min-width:0px){
-  *{
+@media (min-width:0px) {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
   }
-  header{
+
+  html {
+    overflow-x:hidden;
+    scrollbar-width: 0px;
+    background-color: chocolate;
+
+  }
+
+  header {
     width: 100vw;
     background-color: darkslategray;
     display: flex;
@@ -14,7 +22,8 @@
     align-items: center;
     padding: 1vh;
   }
-  header figure{
+
+  header figure {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,35 +31,41 @@
     width: 33%;
   }
 
-  header figure img{
+  header figure img {
     width: 33vw;
     animation: rotar 3s infinite linear;
-  }@keyframes rotar {
-    from{
+  }
+
+  @keyframes rotar {
+    from {
       transform: rotate(0deg);
     }
-    to{
+
+    to {
       transform: rotate(1turn);
     }
   }
-  
-  header h1{
+
+  header h1 {
     color: white;
     width: 67%;
     text-align: center;
     font-size: 2.5rem;
     opacity: 0;
     animation: aparece infinite 2s alternate;
-  }@keyframes aparece {
-    from{
+  }
+
+  @keyframes aparece {
+    from {
       opacity: 0;
     }
-    to{
+
+    to {
       opacity: 1;
     }
   }
 
-  header nav{
+  header nav {
     display: none;
     width: 100vw;
     justify-content: flex-start;
@@ -59,27 +74,37 @@
     gap: 3vw;
     font-size: 1.7rem;
     overflow-x: scroll;
-    height: max-content;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: solid .12rem silver;
   }
+
   header input#nav1:checked~nav#ppal {
     display: flex;
   }
+
   ::-webkit-scrollbar {
-    height: 0px; 
+    height: 0px;
   }
-  header nav a{
+
+  header nav a {
     height: max-content;
     padding: 1vw;
-    border: .1rem solid silver;
+    border: .1rem solid black;
+    color: white;
+    font-weight: 900;
     border-radius: .5rem;
     text-decoration: none;
-    color: white;
     margin: 0 auto;
   }
-  header input{
+
+  header input {
     display: none;
   }
-  header label{
+
+  header label {
     width: 100vw;
     text-align: center;
     color: white;
@@ -93,63 +118,241 @@
     margin-bottom: 1vh;
 
   }
-  header label:active{
+
+  header label:active {
     animation: color .2s alternate infinite;
     width: max-content;
     transition: .1s linear;
   }
+
   @keyframes color {
-    from{
+    from {
       background-color: transparent;
     }
-    to{
+
+    to {
       background-color: black;
     }
   }
-  main{
+
+  main {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     width: 100vw;
   }
-  main section{
+
+  main section {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     width: 100vw;
     padding: 0.5rem;
-    background-color: rgba(47, 79, 79, 0.8);
     gap: 1rem;
   }
-  main section h2{
+
+  main section h3 {
+    text-align: center;
+  }
+
+  main section p {
+    text-align: justify;
+  }
+
+  main section h2,
+  h3 {
     width: 100vw;
     color: white;
     text-align: center;
+  }
+  main section#home{
+    margin-top: 5vh;
+  }
+  main section#home ul {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    height: max-content;
+    text-align: right;
+    padding-top: 25%;
+    background-color: black;
+  }
 
+  main section#home ul li {
+    width: 100%;
+    font-size: 3vh;
   }
-  main section#home figure{
+
+
+
+  main section#home {
+    justify-content: center !important;
+  }
+
+  main section#home figure {
     margin: 0 auto;
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    background-color: white;
+    width: 25%;
   }
-  main section#home figure img{
-    height: 50vh;
-    filter:sepia(.5),blur(100px)
+
+  main section#home figure img {
+    width: 100%;
+    filter: sepia(.5), blur(100px)
   }
-  main section#home p{
+
+  main section#home p {
     width: 100vw;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: transparent;
     text-align: justify;
     line-height: normal;
     font-weight: 100;
   }
+
+  main section#servicios {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  main section#servicios h2 {
+    text-decoration: underline black;
+  }
+
+  main section#servicios p {
+    font-size: 3vh;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  main section#servicios nav {
+    background-color: rgba(210, 105, 30, 0.5);
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding: .1rem;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 1.5vh;
+  }
+
+  main section#servicios nav a::before {
+    content: "✔";
+    padding: 0.1rem;
+  }
+
+  main section#servicios nav a {
+    margin: 0 auto;
+  }
+
+  main section#servicios figure {
+    width: 100%;
+  }
+  main section article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  main section article figure{
+    display: flex;
+    justify-content: center;
+  }
+
+  main section#servicios figure img {
+    width: 95vw;
+    padding: .5rem;
+    transition: .1s linear;
+  }
+
+  main section#servicios article#admin nav {
+    padding-top: 3vh;
+    gap: 7vh;
+  }
+
+  main section#servicios article#admin nav a {
+    text-align: center;
+    background-color: darkblue;
+    border-radius: 3vh;
+    border: 1px solid darkred;
+    box-shadow: 6px 12px 34px 11px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 6px 12px 34px 11px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 6px 12px 34px 11px rgba(255, 255, 255, 1);
+  }
+
+  main section#servicios article#web{
+    display: flex;
+  }
+  main section#servicios article#admin nav a span {
+    font-size: 4vh;
+  }
+
+  main section#servicios article#admin nav a::before {
+    content: none;
+    padding: 0.1rem;
+  }
 }
-@media (min-width:850px){
-  header h1{
-    font-size: 5rem;
+
+@media (min-width:850px) {
+  header h1 {
+    font-size: 5rem
+  }
+
+  header label {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav a {
+    background-color: siena;
+    color: white;
+  }
+
+  main section#home p {
+    width: 90%;
+    height: max-content;
+    font-size: x-large;
+    font-size: 3vw;
+  }
+
+  main section#home h2 {
+    font-size: 4vw;
+  }
+
+  main section#home figure {
+    width: 30%;
     background-color: black;
   }
+
+  main section#home ul li {
+    font-size: 5vw;
+  }
+
+  main section#servicios figure {
+    width: 100%;
+  }
+}
+
+@media (min-width:900px) {
+  main section#servicios figure img {
+    filter: blur(5px);
+    transition: .1s linear;
+  }
+
+  main section#servicios figure img:hover {
+    filter: blur(0px);
+  }
+
+  main section#servicios figure img :not(hover) {
+    filter: blur(5px);
+  }
+
+
 }

@@ -1,19 +1,28 @@
+import { Grid, TextField } from '@mui/material'
+import { border } from '@mui/system'
 import React from 'react'
 
 export const ContactoPage = () => {
   return (
     <>
-        <h2>Formulario de Contacto</h2>
-        <form>
-            <div id="nombre">
-                <label>Nombre</label>
-                <input type="text" placeholder='Introduce tu nombre' />
-            </div>
-            <div id="nombre">
-                <label>Apellidos</label>
-                <input type="text" placeholder='Introduce tus apellidos' />
-            </div>
-        </form>
+      <Grid container sx={{ backgroundColor: 'lightgray', display: 'flex', justifyContent: 'center', padding: '5px'}}>
+        <Grid item xs={12} md={6}>
+          <div>
+            <TextField variant='outlined' label='Nombre' placeholder='Nombre Completo'/>
+            
+
+            <TextField variant='outlined' label='Apellidos' placeholder='Nombre Completo'/>
+            
+          </div>
+
+          <TextField variant='outlined' label='Calle'/>
+            
+
+            <TextField variant='outlined' label='Numero'/>
+            
+
+        </Grid>
+      </Grid>
     </>
-  )
+      )
 }
