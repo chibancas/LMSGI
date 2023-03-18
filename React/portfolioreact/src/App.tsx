@@ -4,6 +4,11 @@ import './App.css';
 import { Header } from './structura/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './pages/Home/Home';
+import { ServiciosPage } from './pages/Servicios/Servicios';
+import { Web } from './pages/Servicios/Web';
+import { Admin } from './pages/Servicios/Admin';
+import { Momae } from './pages/Servicios/Momae';
+import { Fun } from './pages/Fun/Fun';
 
 
 export const App = () => {
@@ -12,6 +17,12 @@ export const App = () => {
       <Header/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
+          <Route path='servicios' element={<ServiciosPage/>}>
+            <Route path='web' element={<Web/>}/>
+            <Route path='admin' element={<Admin/>}/>
+            <Route path='momae' element={<Momae/>}/>
+          </Route>
+          <Route path='fun' element={<Fun/>}/>
       </Routes>
     </>
   )

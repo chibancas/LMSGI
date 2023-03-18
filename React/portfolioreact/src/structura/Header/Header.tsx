@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from './../../logo.svg'
-import { NavBar } from './NavBar'
 export const Header = () => {
   return (
     <header>
@@ -14,10 +13,10 @@ export const Header = () => {
       <input type="checkbox" id='nav1' />
       <label htmlFor="nav1">Secciones</label>
       <nav id='ppal'>
-        <NavLink to={'/'}>Inicio</NavLink>
-        <NavLink to={'/servicios'}>Servicios</NavLink>
-        <NavLink to={'/skills'}>Habilidades</NavLink>
-        <NavLink to={'/contacto'}>Contacto</NavLink>
+        <NavLink to={''}>Inicio</NavLink>
+        <NavLink to={'servicios'}>Servicios</NavLink>
+        <NavLink to={'fun'}>Aficiones</NavLink>
+        <NavLink to={'contacto'}>Contacto</NavLink>
       </nav>
     </header>
   )
