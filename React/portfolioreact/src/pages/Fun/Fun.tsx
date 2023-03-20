@@ -5,6 +5,15 @@ import tlou from "./../../assets/tlou.jpg"
 import gears from "./../../assets/gears.png"
 import gta from "./../../assets/gta.jpg"
 import cell from "./../../assets/blacklist.jpg"
+import spo from "./../../assets/spotify.jpg"
+import { NavLink } from 'react-router-dom'
+const music = [
+  {
+    enlace: "https://open.spotify.com/playlist/2y3fwIaDs5aFh6KQkyjbST?si=13ebfc4165124841",
+    portada: spo
+  }
+
+]
 
 const games = [
   {
@@ -47,7 +56,6 @@ export const Fun = () => {
           <h3>
             Videojuegos
           </h3>
-          <p>Aquí dejo algunos de los videojuegos que más me gustan</p>
           {
             games.map((game) => {
               return (
@@ -58,6 +66,17 @@ export const Fun = () => {
               )
             })
           }
+        </article>
+        <article id='music'>
+            <h3>
+              Mi Música
+            </h3>
+            <NavLink to={'https://open.spotify.com/playlist/2y3fwIaDs5aFh6KQkyjbST?si=13ebfc4165124841'}>
+              <figure>
+                <img src={spo} />
+                <span>Pinche aquí</span>
+              </figure>
+            </NavLink>
         </article>
       </section>
     </main >

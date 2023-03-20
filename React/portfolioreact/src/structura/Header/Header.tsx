@@ -13,7 +13,7 @@ export const Header = () => {
       <input type="checkbox" id='nav1' />
       <label htmlFor="nav1">Secciones</label>
       <nav id='ppal'>
-        <NavLink to={''}>Inicio</NavLink>
+        <NavLink to={'/'}>Inicio</NavLink>
         <NavLink to={'servicios'}>Servicios</NavLink>
         <NavLink to={'fun'}>Aficiones</NavLink>
         <NavLink to={'contacto'}>Contacto</NavLink>

@@ -9,6 +9,7 @@ import { Web } from './pages/Servicios/Web';
 import { Admin } from './pages/Servicios/Admin';
 import { Momae } from './pages/Servicios/Momae';
 import { Fun } from './pages/Fun/Fun';
+import { Contact } from './pages/Contact/Contact';
 
 
 export const App = () => {
@@ -23,6 +24,7 @@ export const App = () => {
             <Route path='momae' element={<Momae/>}/>
           </Route>
           <Route path='fun' element={<Fun/>}/>
+          <Route path='contact' element={<Contact/>}/>
       </Routes>
     </>
   )
