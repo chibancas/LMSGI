@@ -18,27 +18,27 @@ const music = [
 const games = [
   {
     foto: forza,
-    alt: "Foto de Forza Horizon 4"
+    alt: "Para mi Forza Horizon 4 es una de las formas más bonitas de conducir y ver Reino Unido desde una pantalla. Un juego de conducción sublime que mezcla mecánicas arcade con algunas de simulación y una representación ambiental sin igual en la saga Forza Horizon."
   },
   {
     foto: gears,
-    alt: "Foto de Gears 5"
+    alt: "Gears 5 fue el primer juego que probé de la saga Gears y me dejó con ganas de más. Historia atrapadora, gunplay muy bien llevado a la tercera perosna y escenarios lineales muy amplios."
   },
   {
     foto: tlou,
-    alt: "Foto de The Last Of Us"
+    alt: "Título que fue lanzado en 2013 y por su gran historia, gampley y cariño de la comunidad ha sido lanzado 3 veces ya, lástima que sólo sea exclusivo de la compañía nipona Sony."
   },
   {
     foto: gta,
-    alt: "Foto de GTA Online"
+    alt: "No hay mucho que decir, una revolución en su época y todavía mantiene una muy considerable comuniad online activa."
   },
   {
     foto: unchard,
-    alt: "Foto de Uncharted 4"
+    alt: "Exclusivo de Sony indispensable si te gustan los disparos y las buenas historias. "
   },
   {
     foto: cell,
-    alt: "Foto de Splinter Cell"
+    alt: "Para mi un juego desconocido hasta 2022. En mi opinión, este título es más bien un juego que ofrece gameplay de sigilo, dejando atrás la historia."
   }
 ]
 

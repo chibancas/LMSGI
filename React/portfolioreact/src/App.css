@@ -11,7 +11,6 @@
     overflow-x: hidden;
     scrollbar-width: 0px;
     background-color: chocolate;
-
   }
 
   header {
@@ -33,7 +32,7 @@
 
   header figure img {
     width: 33vw;
-    animation: rotar 3s infinite linear;
+    animation: rotar 5s infinite linear;
   }
 
   @keyframes rotar {
@@ -98,6 +97,13 @@
     border-radius: .5rem;
     text-decoration: none;
     margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  header nav a span {
+    width: 100%;
   }
 
   header input {
@@ -153,24 +159,26 @@
 
   main section p {
     text-align: justify;
-    margin:0 auto;
+    margin: 0 auto;
     width: 100%;
     font-size: 1.5rem;
     height: max-content;
   }
 
-  main section h2,
-  h3 {
+  main section h2 {
     width: 100%;
     color: white;
     text-align: center;
     text-align: center;
-  }
-  main section h3{
-    font-size: 1.8rem;
+    font-size: 2.25rem;
   }
 
-  main section#home {
+  main section h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  main section {
     margin-top: 5vh;
   }
 
@@ -181,8 +189,8 @@
     list-style: none;
     height: max-content;
     text-align: right;
-    padding-top: 25%;
-    background-color: black;
+    gap: 2rem;
+
   }
 
   main section#home ul li {
@@ -252,8 +260,10 @@
 
   main section#servicios nav a {
     margin: 0 auto;
-    font-size: 1.2rem;
-    text-align: center  ;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
   }
 
   main section#servicios figure {
@@ -305,10 +315,11 @@
     padding: 0.1rem;
   }
 
-  main section{
+  main section {
     justify-content: center;
   }
-  main section article#games{
+
+  main section article#games {
     width: 90%;
     display: flex;
     flex-flow: column wrap;
@@ -324,26 +335,30 @@
     width: 100%;
     padding: 1rem;
     border: 2px solid white;
+    gap: .5rem;
   }
 
-    main section article#games figure img {
-    width: 50%;
+  main section article#games figure img {
+    width: 100%;
   }
 
   main section article#games figure span {
-    text-align: center;
-    font-size: x-large;
     width: 100%;
+    font-size: 1.5rem;
+    text-align: justify;
   }
-  main section#servicios article#momae nav{
+
+  main section#servicios article#momae nav {
     width: 90%;
     display: flex;
     flex-flow: column nowrap;
   }
-  main section#servicios article#momae nav a::before{
+
+  main section#servicios article#momae nav a::before {
     content: "";
   }
-  main section#servicios article#momae nav a{
+
+  main section#servicios article#momae nav a {
     border: solid 2px silver;
     border-radius: 10px;
     padding: 5px;
@@ -351,39 +366,45 @@
     justify-content: center;
     flex-flow: row wrap;
     width: 100%;
-    justify-content: center;
+    gap: .5rem
   }
-  main section#servicios article#momae nav a span{
+
+  main section#servicios article#momae nav a span {
     order: 1;
     width: 100%;
     text-align: center;
   }
-  main section#servicios article#momae nav a img{
+
+  main section#servicios article#momae nav a img {
     order: 2;
     width: 100%;
   }
-  
 
-  main section article#music figure{
+
+  main section article#music figure {
     width: 100%;
     animation: scala infinite 1s alternate;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
+
   @keyframes scala {
-    from{
+    from {
       transform: scale(1);
     }
-    to{
+
+    to {
       transform: scale(.5);
     }
   }
-  main section article#music figure span{
+
+  main section article#music figure span {
     width: 100%;
     text-align: center;
     font-size: 3rem;
   }
+  
 }
 
 @media (min-width:850px) {
@@ -435,6 +456,7 @@
     justify-content: center;
     gap: 1rem;
   }
+
   main section article#games figure {
     display: flex;
     flex-flow: row wrap;
@@ -444,7 +466,7 @@
     border: 2px solid white;
   }
 
-    main section article#games figure img {
+  main section article#games figure img {
     height: 50vh;
     width: auto;
   }

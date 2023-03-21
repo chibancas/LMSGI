@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from './../../logo.svg'
+import HomeIcon from '@mui/icons-material/Home';
+import WorkIcon from '@mui/icons-material/Work';
+import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
+import InfoIcon from '@mui/icons-material/Info';
 export const Header = () => {
   return (
     <header>
@@ -13,10 +17,24 @@ export const Header = () => {
       <input type="checkbox" id='nav1' />
       <label htmlFor="nav1">Secciones</label>
       <nav id='ppal'>
-        <NavLink to={'/'}>Inicio</NavLink>
-        <NavLink to={'servicios'}>Servicios</NavLink>
-        <NavLink to={'fun'}>Aficiones</NavLink>
-        <NavLink to={'contacto'}>Contacto</NavLink>
+        <NavLink to={'/'}>
+          <HomeIcon />
+          <span>Inicio</span>
+        </NavLink>
+        <NavLink to={'servicios'}>
+          <WorkIcon />
+          <span>Servicios</span>
+        </NavLink>
+        <NavLink to={'fun'}>
+          <SentimentVerySatisfiedIcon />
+          <span>Aficiones</span>
+        </NavLink>
+        <NavLink to={'contacto'}>
+          <InfoIcon />
+          <span>
+            contacto
+          </span>
+        </NavLink>
       </nav>
     </header>
   )
