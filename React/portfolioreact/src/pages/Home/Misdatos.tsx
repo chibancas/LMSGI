@@ -4,7 +4,7 @@ const misDatos = [
         Apellidos: "Fernández Fernández",
         Edad:"19",
         Localidad: "04620,Vera",
-        Estudios: "Primaria, ESO, CFGM SMyR"
+        Estudios: "Primaria, ESO, CFGM SMR"
     }
 ]
 

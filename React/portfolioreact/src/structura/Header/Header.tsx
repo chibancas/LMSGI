@@ -18,19 +18,19 @@ export const Header = () => {
       <label htmlFor="nav1">Secciones</label>
       <nav id='ppal'>
         <NavLink to={'/'}>
-          <HomeIcon />
+          <HomeIcon fontSize='large' />
           <span>Inicio</span>
         </NavLink>
         <NavLink to={'servicios'}>
-          <WorkIcon />
+          <WorkIcon fontSize='large' />
           <span>Servicios</span>
         </NavLink>
         <NavLink to={'fun'}>
-          <SentimentVerySatisfiedIcon />
+          <SentimentVerySatisfiedIcon fontSize='large' />
           <span>Aficiones</span>
         </NavLink>
         <NavLink to={'contacto'}>
-          <InfoIcon />
+          <InfoIcon fontSize='large' />
           <span>
             contacto
           </span>

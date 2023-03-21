@@ -13,8 +13,7 @@ export const HomePage = () => {
                 <p>
                     ¡Hola!.
                     Esta web ha sido creada con ReactJS, lo que ha su vez ha involucrado a HMTL5 y CSS3.
-                    Aquí podrás ver las habilidades que ya he desarrollado y las que me quedan por desarrollar, además de
-                    mi carrera académica.
+                    Aquí podrás ver los servicios que ofrezco, mis hobbies y además, podrás enviarme tus datos o consultar los míos y así poder contactar.
                 </p>
                 <Datos/>
                 <figure>

@@ -197,9 +197,6 @@
     width: 100%;
     font-size: 3vh;
   }
-
-
-
   main section#home {
     justify-content: center !important;
   }
@@ -232,10 +229,6 @@
     flex-flow: row wrap;
   }
 
-  main section#servicios h2 {
-    text-decoration: underline black;
-  }
-
   main section#servicios p {
     width: 95%;
     margin: 0 auto;
@@ -254,8 +247,9 @@
   }
 
   main section#servicios nav a::before {
-    content: "✔";
-    padding: 0.1rem;
+    content: "▶";
+    padding: 0.3rem;
+    animation: aparece 1s infinite;
   }
 
   main section#servicios nav a {
@@ -404,10 +398,83 @@
     text-align: center;
     font-size: 3rem;
   }
-  
+  main section#contact form{
+    width: 98%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: .5rem;
+  }
+  main section#contact form input{
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    padding: .5rem;
+    transition: .3s linear;
+    background-color: blue;
+  }
+  main section#contact form input::placeholder{
+    color: white;
+    font-weight: 900;
+    opacity: 90%;
+  }
+  main section#contact form input:focus{
+    color: white;
+    border-radius: 20px;
+    background-color:darkslateblue;
+  }
+  main section#contact form input#send{
+    background-color: black;
+    border: solid 2px white;
+    transition: .3s linear;
+    color: white;
+  }
+  main section#contact form input#send:focus{
+    color: black;
+    background-color: white;
+  }
+  footer{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+    justify-content: center;
+    border-top: .1rem solid black;
+    padding: .5rem;
+    margin-top: 3rem;
+  }
+  footer nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  footer nav a{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+  footer nav a span{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  footer nav a svg{
+    margin: 0 auto;
+  }
+  main section{
+    gap: 3rem;
+  }
 }
 
-@media (min-width:850px) {
+
+@media (min-width:800px) {
   header h1 {
     font-size: 5rem
   }
@@ -426,10 +493,9 @@
   }
 
   main section#home p {
-    width: 90%;
+    width: 98%;
     height: max-content;
-    font-size: x-large;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   main section#home h2 {
@@ -467,30 +533,63 @@
   }
 
   main section article#games figure img {
-    height: 50vh;
-    width: auto;
+    width: 100%;
   }
 
   main section article#games figure span {
     text-align: center;
     font-size: x-large;
     width: 100%;
+    text-align: justify !important;
   }
+  footer nav a span{
+    font-size: 2.5rem;
+  }
+  
+  main section#servicios nav{
+    flex-flow: row wrap;
+  }
+  main section#servicios nav a{
+    font-size: 2rem;
+  }
+  main section#servicios article nav a{
+    width: 20%;
+    padding: .5rem;
+  }
+  main section#servicios article nav a img{
+    width: 100%;
+  }
+  main section#servicios article nav a figure{
+    background-color: black;
+
+  }
+  main section article nav{
+    display: flex;
+    flex-flow: row wrap !important;
+    gap: 0px !important;
+  }
+  main section article nav a{
+    width: 20% !important;
+    font-size: 1.8rem !important;
+    border: none !important;
+  }
+  main section article nav a img{
+    width: 90% !important
+  }
+  main section article h3{
+    width: 100%;
+  }
+
 }
-
-@media (min-width:900px) {
-  main section#servicios figure img {
-    filter: blur(5px);
-    transition: .1s linear;
+@media (min-width:1080px){
+  main section figure img{
+    filter: blur(5px);    
   }
-
-  main section#servicios figure img:hover {
+  main section figure img:active{
     filter: blur(0px);
   }
-
-  main section#servicios figure img :not(hover) {
-    filter: blur(5px);
+  main section figure img:hover{
+    filter: blur(0px);
   }
-
 
 }
