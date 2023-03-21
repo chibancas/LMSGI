@@ -10,7 +10,6 @@ import { ServiciosPage } from './pages/servicios/Servicios';
 import { Web } from './pages/servicios/Web';
 import { Admin } from './pages/servicios/Admin';
 import { Momae } from './pages/servicios/Momae';
-import { Main } from './structura/Main/Main';
 import { Footer } from './structura/Footer/Footer';
 
 
