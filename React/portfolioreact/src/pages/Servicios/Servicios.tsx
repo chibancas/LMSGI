@@ -7,9 +7,9 @@ export const ServiciosPage = () => {
             <section id='servicios'>
                 <h2>¿Que te ofrezco?</h2>
                 <nav>
-                    <NavLink to={'web'}>Creación y mantenimiento de páginas web</NavLink>
-                    <NavLink to={'admin'}>Gestión y mantenimiento de equipos.</NavLink>
-                    <NavLink to={'momae'}>Montaje y mantenimienot de equipos.</NavLink>
+                    <NavLink to={'web'} target="_blank">Creación y mantenimiento de páginas web</NavLink>
+                    <NavLink to={'admin'} target="_blank">Gestión y mantenimiento de equipos.</NavLink>
+                    <NavLink to={'momae'} target="_blank">Montaje y mantenimienot de equipos.</NavLink>
                 </nav>
                 <Outlet />
             </section>

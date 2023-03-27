@@ -8,15 +8,15 @@ export const Footer = () => {
   return (
     <footer>
         <nav id="mydata">
-                    <NavLink to={'https://github.com/chibancas?tab=repositories'}>
+                    <NavLink to={'https://github.com/chibancas?tab=repositories'} target="_blank">
                         <GitHubIcon fontSize='large'/>
                         <span>Mi código</span>
                     </NavLink>
-                    <NavLink to={'https://www.youtube.com/channel/UCcjYbkn9iPVYnqE8c6-2kOQ'}>
+                    <NavLink to={'https://www.youtube.com/channel/UCcjYbkn9iPVYnqE8c6-2kOQ'} target="_blank">
                         <YouTubeIcon fontSize='large'/>
                         <span>Mis Vídeos</span>
                     </NavLink>
-                    <a href="mailto:juanjosefdz2003@gmail.com">
+                    <a href="mailto:juanjosefdz2003@gmail.com" target="_blank">
                         <EmailIcon fontSize='large'/>
                         <span>Mándame un email</span>
                     </a> 
