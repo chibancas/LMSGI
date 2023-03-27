@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/nombre-de-repositorio/static/css/main.a75903ef.css",
-    "main.js": "/nombre-de-repositorio/static/js/main.85a33a7c.js",
-    "static/js/787.df06223f.chunk.js": "/nombre-de-repositorio/static/js/787.df06223f.chunk.js",
-    "static/media/caronte.png": "/nombre-de-repositorio/static/media/caronte.6f37ea91af611f43fcbf.png",
-    "static/media/gears.png": "/nombre-de-repositorio/static/media/gears.e74f06b9c9e080edd59f.png",
-    "static/media/lola.jpg": "/nombre-de-repositorio/static/media/lola.eb5e5510da403afa61d6.jpg",
-    "static/media/TeamViwer.png": "/nombre-de-repositorio/static/media/TeamViwer.83ca4c0a676e155e7d6a.png",
-    "static/media/ftp.png": "/nombre-de-repositorio/static/media/ftp.14169b73edcc29004616.png",
-    "static/media/apache.png": "/nombre-de-repositorio/static/media/apache.f7569d793f30040e125e.png",
-    "static/media/MExchange.png": "/nombre-de-repositorio/static/media/MExchange.f0f1b46e5a4a4fe8492f.png",
-    "static/media/gta.jpg": "/nombre-de-repositorio/static/media/gta.f7e7c07feb2c0a249e6a.jpg",
-    "static/media/blacklist.jpg": "/nombre-de-repositorio/static/media/blacklist.a994f9b425dcf5cbf55d.jpg",
-    "static/media/tlou.jpg": "/nombre-de-repositorio/static/media/tlou.8ea6d15a46510a51b2c9.jpg",
-    "static/media/pcb.png": "/nombre-de-repositorio/static/media/pcb.1e6e90443636b815f4c0.png",
-    "static/media/uncharted.jpg": "/nombre-de-repositorio/static/media/uncharted.6daa58142c45fc0bc5ee.jpg",
-    "static/media/forza.jpg": "/nombre-de-repositorio/static/media/forza.f9b95bedd39a6f5c0144.jpg",
-    "static/media/pcbuild.png": "/nombre-de-repositorio/static/media/pcbuild.8ad0deac339f5b172825.png",
-    "static/media/logo.svg": "/nombre-de-repositorio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/nombre-de-repositorio/index.html",
-    "main.a75903ef.css.map": "/nombre-de-repositorio/static/css/main.a75903ef.css.map",
-    "main.85a33a7c.js.map": "/nombre-de-repositorio/static/js/main.85a33a7c.js.map",
-    "787.df06223f.chunk.js.map": "/nombre-de-repositorio/static/js/787.df06223f.chunk.js.map"
+    "main.css": "/LMSGI/static/css/main.a75903ef.css",
+    "main.js": "/LMSGI/static/js/main.d687d6e5.js",
+    "static/js/787.df06223f.chunk.js": "/LMSGI/static/js/787.df06223f.chunk.js",
+    "static/media/caronte.png": "/LMSGI/static/media/caronte.6f37ea91af611f43fcbf.png",
+    "static/media/gears.png": "/LMSGI/static/media/gears.e74f06b9c9e080edd59f.png",
+    "static/media/lola.jpg": "/LMSGI/static/media/lola.eb5e5510da403afa61d6.jpg",
+    "static/media/TeamViwer.png": "/LMSGI/static/media/TeamViwer.83ca4c0a676e155e7d6a.png",
+    "static/media/ftp.png": "/LMSGI/static/media/ftp.14169b73edcc29004616.png",
+    "static/media/apache.png": "/LMSGI/static/media/apache.f7569d793f30040e125e.png",
+    "static/media/MExchange.png": "/LMSGI/static/media/MExchange.f0f1b46e5a4a4fe8492f.png",
+    "static/media/gta.jpg": "/LMSGI/static/media/gta.f7e7c07feb2c0a249e6a.jpg",
+    "static/media/blacklist.jpg": "/LMSGI/static/media/blacklist.a994f9b425dcf5cbf55d.jpg",
+    "static/media/tlou.jpg": "/LMSGI/static/media/tlou.8ea6d15a46510a51b2c9.jpg",
+    "static/media/pcb.png": "/LMSGI/static/media/pcb.1e6e90443636b815f4c0.png",
+    "static/media/uncharted.jpg": "/LMSGI/static/media/uncharted.6daa58142c45fc0bc5ee.jpg",
+    "static/media/forza.jpg": "/LMSGI/static/media/forza.f9b95bedd39a6f5c0144.jpg",
+    "static/media/pcbuild.png": "/LMSGI/static/media/pcbuild.8ad0deac339f5b172825.png",
+    "static/media/logo.svg": "/LMSGI/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/LMSGI/index.html",
+    "main.a75903ef.css.map": "/LMSGI/static/css/main.a75903ef.css.map",
+    "main.d687d6e5.js.map": "/LMSGI/static/js/main.d687d6e5.js.map",
+    "787.df06223f.chunk.js.map": "/LMSGI/static/js/787.df06223f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a75903ef.css",
-    "static/js/main.85a33a7c.js"
+    "static/js/main.d687d6e5.js"
   ]
 }
