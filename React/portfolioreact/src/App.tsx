@@ -19,14 +19,14 @@ export const App = () => {
       <Header/>
       
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
-          <Route path='servicios' element={<ServiciosPage/>}>
-            <Route path='web' element={<Web/>}/>
-            <Route path='admin' element={<Admin/>}/>
-            <Route path='momae' element={<Momae/>}/>
+        <Route path='LMSGI/React/portfolioreact/' element={<HomePage/>}/>
+          <Route path='LMSGI/React/portfolioreact/servicios' element={<ServiciosPage/>}>
+            <Route path='servicios/web' element={<Web/>}/>
+            <Route path='servicios/admin' element={<Admin/>}/>
+            <Route path='servicios/momae' element={<Momae/>}/>
           </Route>
-          <Route path='fun' element={<Fun/>}/>
-          <Route path='contacto' element={<Contact/>}/>
+          <Route path='LMSGI/React/portfolioreact/fun' element={<Fun/>}/>
+          <Route path='LMSGI/React/portfolioreact/contacto' element={<Contact/>}/>
       </Routes>
       <Footer/>
     </>
