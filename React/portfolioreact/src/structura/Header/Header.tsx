@@ -17,19 +17,19 @@ export const Header = () => {
       <input type="checkbox" id='nav1' />
       <label htmlFor="nav1">Secciones</label>
       <nav id='ppal'>
-        <NavLink to={'LMSGI/React/portfolioreact/src/pages/Home/'}>
+        <NavLink to={'/'}>
           <HomeIcon fontSize='large' />
           <span>Inicio</span>
         </NavLink>
-        <NavLink to={'LMSGI/React/portfolioreact/src/pages/servicios'}>
+        <NavLink to={'servicios'}>
           <WorkIcon fontSize='large' />
           <span>Servicios</span>
         </NavLink>
-        <NavLink to={'LMSGI/React/portfolioreact/src/pages/Fun/'}>
+        <NavLink to={'Fun'}>
           <SentimentVerySatisfiedIcon fontSize='large' />
           <span>Aficiones</span>
         </NavLink>
-        <NavLink to={'LMSGI/React/portfolioreact/src/pages/contacto/'}>
+        <NavLink to={'Contacto'}>
           <InfoIcon fontSize='large' />
           <span>
             contacto
