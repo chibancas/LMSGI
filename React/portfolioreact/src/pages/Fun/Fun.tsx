@@ -71,12 +71,12 @@ export const Fun = () => {
             <h3>
               Mi Música
             </h3>
-            <NavLink to={'https://open.spotify.com/playlist/2y3fwIaDs5aFh6KQkyjbST?si=13ebfc4165124841'}>
+            <a href='https://open.spotify.com/playlist/2y3fwIaDs5aFh6KQkyjbST?si=13ebfc4165124841' target="_blank">
               <figure>
                 <img src={spo} />
                 <span>Pinche aquí</span>
               </figure>
-            </NavLink>
+            </a>
         </article>
       </section>
     </main >
