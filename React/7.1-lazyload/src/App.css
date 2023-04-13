@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: darkblue;
+  height: 25vh;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+header h1{
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  max-width: max-content;
+}
+header nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: beige;
+  width: 100%;
+  height: max-content;
+  font-size: 3.5rem;
+}
+header nav a{
+  text-decoration: none;
+}
+main{
+  height: 75vh;
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
