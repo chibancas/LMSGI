@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import { HomePage, FormacionPage, ContactoPage, TrabajosPage, ServiciosPage } from './commons/pages/index';
+import { HomePage, FormacionPage, ContactoPage, TrabajosPage, ServiciosPage } from './pages/index';
 import { NavBar } from './commons/NavBar';
 import { Route, Routes } from 'react-router-dom';
-import { Main } from './commons/components/Main';
+import { Main } from './components/Main';
 import { routes } from './commons/Routes';
 const App = () => {
   return (

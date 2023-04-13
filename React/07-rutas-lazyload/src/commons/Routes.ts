@@ -1,4 +1,4 @@
-import { ContactoPage, FormacionPage, HomePage, ServiciosPage, TrabajosPage } from "./pages";
+import { ContactoPage, FormacionPage, HomePage, ServiciosPage, TrabajosPage } from "../pages";
 
 type TSXComponent=()=>JSX.Element
 interface Route{
