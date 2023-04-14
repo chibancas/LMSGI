@@ -1,11 +1,11 @@
 import { ContactoPage, FormacionPage, HomePage, ServiciosPage, TrabajoPage } from "../pages"
 import { ProductosPage } from "../pages/ProductosPage";
 
-type JSXComponent = () => JSX.Element;
+type TSXComponent = () => JSX.Element;
 
 interface Route{
     path: string;
-    component: JSXComponent;
+    component: TSXComponent;
     name: string;
     children?: Route[]
 }

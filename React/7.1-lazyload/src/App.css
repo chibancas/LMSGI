@@ -15,7 +15,7 @@ header h1{
   text-align: center;
   width: 100%;
   font-size: 4rem;
-  max-width: max-content;
+  height: max-content;
 }
 header nav{
   display: flex;

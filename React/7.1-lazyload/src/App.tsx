@@ -10,17 +10,26 @@ function App() {
   return (
     <>
       <header>
-        <h1>Lazy Load</h1>
+        <h1>Rutas Lazy Load</h1>
         <NavBar/>
       </header>
       <Routes>
         <Route path='/' element={<Main/>}>
-        {
+        {/* {
           routes.map((route)=>(
             <Route
               key={route.path}
               path={route.path}
               element={<route.component/>}
+            />
+          ))
+        } */},
+        {
+          routes.map(({path,component:Component})=>(
+            <Route
+              key={path}
+              path={path}
+              element={<Component/>}
             />
           ))
         }
