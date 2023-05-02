@@ -1,3 +1,4 @@
+export { CategoriasPage } from "./CategoriasPage";
 export { ContactoPage } from "./ContactoPage";
 export { FormacionPage } from "./FormacionPage";
 export { HomePage } from "./HomePage";

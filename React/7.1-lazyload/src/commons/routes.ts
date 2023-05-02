@@ -1,4 +1,5 @@
 import { ContactoPage, FormacionPage, HomePage, ServiciosPage, TrabajoPage } from "../pages"
+import { CategoriasPage } from "../pages/CategoriasPage";
 import { ProductosPage } from "../pages/ProductosPage";
 
 type TSXComponent = () => JSX.Element;
@@ -40,5 +41,10 @@ export const routes:Route[]=[
         path: '/contacto',
         component: ContactoPage,
         name: 'Contacto'
+    },
+    {
+        path: '/firebase',
+        component: CategoriasPage,
+        name: 'Firebase'
     }
 ]

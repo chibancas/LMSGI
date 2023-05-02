@@ -12,7 +12,10 @@ export const NavBar = () => {
         } */}
         {
           routes.map(({path,name})=>(
-            <NavLink to={path}>{name}</NavLink>
+            <NavLink
+            key={path} to={path}>
+              {name}
+            </NavLink>
           ))
         }
     </nav>

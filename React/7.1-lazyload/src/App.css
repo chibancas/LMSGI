@@ -36,4 +36,17 @@ main{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  height: auto;
+}
+main h2{
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
+main ul{
+  color: white;
+  list-style: "☑";
+}
+main ul li{
+  font-size: 2rem;
 }
