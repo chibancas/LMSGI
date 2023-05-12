@@ -6,8 +6,8 @@ import { Rutas } from '../interfaces/routes'
 
 export const NavBar = () => {
   return (
-    <nav style={{backgroundColor:"black", width:"100%"}}>
-      <Grid container width={"100%"} bgcolor={""}>
+    <nav style={{backgroundColor:"black", width:"100%",}}>
+      <Grid container width={"100%"} overflow={"auto"}>
         {
           Rutas.map(({ path, name }) => (
             <Grid item xs={3} textAlign={"center"}>

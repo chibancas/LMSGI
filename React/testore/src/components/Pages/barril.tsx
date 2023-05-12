@@ -5,7 +5,7 @@ export { Emple } from "./Empleados/EmplePage";
 export { Inicio } from "./Inicio/InicioPage";
 export { Productos } from "./Productos/ProductosPage";
 export { Logo }
-export { conexiondb } from '../FBConfig/FBConfig';
+export { conexiondb } from '../../FBConfig/FBProductos';
 export { Header } from '../Header/Header';
 export { Main } from '../Main/Main';
 export { Footer } from '../Footer/Footer';
