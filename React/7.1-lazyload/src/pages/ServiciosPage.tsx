@@ -17,12 +17,9 @@ export const ServiciosPage = () => {
         {
           pokemons.map(({name,url})=>(
             <li>
-              <span>
+              <a href={url} key={name}>
                 {name}
-              </span>
-              <span>
-                {url}
-              </span>
+              </a>
             </li>
           ))
         }
