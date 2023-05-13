@@ -1,4 +1,5 @@
 export interface IProductos{
-    nombre:string,
-    precio:number,
+    id: string;
+    nombre:string;
+    precio:number;
 }

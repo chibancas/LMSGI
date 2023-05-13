@@ -8,22 +8,12 @@ import { BorderAll } from '@material-ui/icons'
 export const Header = () => {
   return (
     <header>
-      <Grid container textAlign={"center"} justifyContent={"center"} color={"white"} fontSize={"2rem"}>
-        <Grid item xs={6} bgcolor={"green"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
-          <h1>
-            TeStore
-          </h1>
-        </Grid>
-        <Grid item xs={4} bgcolor={"orange"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
-          <h2>
-            Juan José Fernández
-          </h2>
-        </Grid>
-        <Grid item xs={2} bgcolor={"darkblue"} display={"flex"} alignItems={"center"} justifyContent={"center"} padding={".5rem"}>
-          <img src={Logo} alt="logo" height={"50px"} style={{border:"solid 1px white",borderRadius:"1rem",scale:"1.3"}} />
-        </Grid>
-        <NavBar/>
-      </Grid>
+      <h1>
+        TeStore
+      </h1>
+      <input type="checkbox" name="menu1" id="menu" />
+      <label htmlFor="menu">Menú</label>
+      <NavBar />
     </header>
   )
 }

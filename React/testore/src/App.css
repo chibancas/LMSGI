@@ -1,5 +1,73 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@media (min-width:0px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: .5rem;
+    align-items: center;
+  }
+
+  header h1 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+
+  /*esto soolo funciona ids y clases*/
+  #menu:checked ~ .pako {
+    width: 100%;
+    display: flex !important;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: .1rem;
+    gap: .5rem;
+  }
+  header input{
+    display: none;
+  }
+  header nav{
+    display: none;
+  }
+  header label{
+    font-size: 2rem;
+    margin-top: .5rem;
+    text-align:center;
+    cursor: pointer;
+    border: solid .11rem red;
+    padding: .12rem;
+    border-radius: .5rem;
+    background-color: gainsboro;
+  }
+  header nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: solid .1rem black;
+    background-color: blanchedalmond;
+    text-align: center;
+  }
+  section#productos{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blue;
+  }
+  section#productos article{
+    justify-content: center;
+    text-align: center;
+    background-color: green;
+    width: 100%;
+  }
+  section#productos form{
+    width: 100%;
+    background-color: black;
+  }
 }
