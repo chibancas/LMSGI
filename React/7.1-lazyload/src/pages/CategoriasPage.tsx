@@ -18,9 +18,9 @@ export const CategoriasPage = () => {
         console.log(...res)
       })
   }, []
+  );
 
 
-  )
   const { register, handleSubmit, watch, formState: { errors } } = useForm<ICategorias>();
   const onAddCategoria =(dataCategoria: ICategorias)=>{
     console.log('enviando....')

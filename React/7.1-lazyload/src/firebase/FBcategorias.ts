@@ -10,7 +10,7 @@ import { nanoid } from 'nanoid';
 
 
 export const app = initializeApp(firebaseConfig)
-export const db = getFirestore() //use database para las credenciales
+export const db = getFirestore(app) //use database para las credenciales
 
 export const getCategorias = async ():Promise<ICategorias[]> => {
     let categorias: ICategorias[] = []; //array inicializado al vacio
