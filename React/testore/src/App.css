@@ -32,6 +32,7 @@
     padding: .1rem;
     gap: .5rem;
   }
+
   header input{
     display: none;
   }
@@ -55,19 +56,22 @@
     background-color: blanchedalmond;
     text-align: center;
   }
-  section#productos{
+  main#productos{
     display: flex;
     flex-flow: row wrap;
     background-color: blue;
   }
-  section#productos article{
+  main#productos article{
     justify-content: center;
     text-align: center;
     background-color: green;
     width: 100%;
   }
-  section#productos form{
+  main#productos form{
     width: 100%;
     background-color: black;
+  }
+  main#productos article span#precio::after{
+    content: " €";
   }
 }

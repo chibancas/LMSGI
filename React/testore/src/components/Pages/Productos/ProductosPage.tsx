@@ -31,7 +31,7 @@ export const Productos = () => {
     window.location.reload()
   }
   return (
-    <section id="productos">
+    <main id="productos">
       <article>
         {
           // listar productos
@@ -56,6 +56,6 @@ export const Productos = () => {
         id='nombre' placeholder='Precio'/>
         <button type='submit'>enviar</button>
       </form>
-    </section>
+    </main>
   )
 }

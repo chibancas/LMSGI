@@ -5,8 +5,6 @@ import { FirestoreProvider, useFirebaseApp } from 'reactfire';
 
 export const Main = () => {
   return (
-    <main>
-      <Outlet/>
-    </main>
+    <Outlet />
   )
 }
