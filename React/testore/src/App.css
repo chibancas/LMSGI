@@ -31,8 +31,8 @@
     margin-top: 1rem;
     padding: .1rem;
     gap: .5rem;
-  }
-
+    transition: 1s ease-in-out;
+  }  
   header input{
     display: none;
   }

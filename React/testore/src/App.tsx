@@ -13,7 +13,6 @@ export const App = () => {
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<Inicio />} />
         {
           Rutas.map(({ path, component:Component }) => (
             <Route path={path} key={path} element={<Component/>} />
