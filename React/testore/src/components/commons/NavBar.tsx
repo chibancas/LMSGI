@@ -14,5 +14,5 @@ export const NavBar = () => {
         ))
       }
     </nav>
-  ); console.log('nav renderizado')
+  );
 }

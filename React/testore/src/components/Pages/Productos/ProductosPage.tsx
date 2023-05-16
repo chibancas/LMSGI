@@ -32,19 +32,17 @@ export const Productos = () => {
   }
   return (
     <main id="productos">
-      <article>
         {
           // listar productos
           productos.map((productosolo) => {
             return (
-              <>
+              <article key={productosolo.id}>
                 <h2>{productosolo.nombre}</h2>
                 <span id='precio'>{productosolo.precio}</span>
-              </>
+              </article>
             )
           })
         }
-      </article>
       <form onSubmit={handleSubmit(onaddNuevoPro)} noValidate>
         <input
         {...register("nombre")}
