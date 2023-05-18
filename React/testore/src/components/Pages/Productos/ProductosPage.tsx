@@ -21,9 +21,9 @@ export const Productos = () => {
   //registeer y handleSubmit son funciones de react hook form
   //se iguala la interfaz a un formulario y ponemos los parentesis
   //de las funciones
-  const {register,handleSubmit}=useForm<IProductos>();
+  const { register, handleSubmit } = useForm<IProductos>();
 
-  const onaddNuevoPro=async(datoProducto:IProductos)=>{
+  const onaddNuevoPro = async (datoProducto: IProductos) => {
     //aqui es donde enviamos los datos al backend
     console.log(datoProducto)
     await addproducto(datoProducto)
@@ -32,26 +32,33 @@ export const Productos = () => {
   }
   return (
     <main id="productos">
-        {
-          // listar productos
-          productos.map((productosolo) => {
-            return (
-              <article key={productosolo.id}>
-                <h2>{productosolo.nombre}</h2>
-                <span id='precio'>{productosolo.precio}</span>
-              </article>
-            )
-          })
-        }
+      {
+        // listar productos
+        productos.map((productosolo) => {
+          return (
+            <article key={productosolo.id}>
+              <figure>
+                <img src={productosolo.img} alt="foto del producto" />
+              </figure>
+              <h2>{productosolo.nombre}</h2>
+              <span id='precio'>{productosolo.precio}</span>
+            </article>
+          )
+        })
+      }
       <form onSubmit={handleSubmit(onaddNuevoPro)} noValidate>
         <input
-        {...register("nombre")}
-        type="text" id='nombre' placeholder='Nombre'/>
-        
+          {...register("nombre")}
+          type="text" id='nombre' placeholder='Nombre' />
+
         <input
-        type="text"
-        {...register("precio")}
-        id='nombre' placeholder='Precio'/>
+          type="text"
+          {...register("precio")}
+          id='precio' placeholder='Precio' />
+        <input
+          type="text"
+          {...register("img")}
+          id='img' placeholder='Imagen (URL)' />
         <button type='submit'>enviar</button>
       </form>
     </main>

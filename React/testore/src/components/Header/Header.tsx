@@ -5,6 +5,7 @@ import { NavBar } from '../commons/NavBar'
 import { Grid } from '@mui/material'
 import { Logo } from '../Pages/barril'
 import { BorderAll } from '@material-ui/icons'
+
 export const Header = () => {
   return (
     <header>
@@ -12,7 +13,10 @@ export const Header = () => {
         TeStore
       </h1>
       <input type="checkbox" name="menu1" id="menu" />
-      <label htmlFor="menu">Menú</label>
+      <label htmlFor="menu">
+        <span>Menú</span>
+        <i id='ojo' className="fa-solid fa-eye-slash"></i>
+      </label>
       <NavBar />
     </header>
   )
