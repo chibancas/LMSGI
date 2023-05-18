@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Main } from './components/Main/Main';
 import { Route, Routes } from 'react-router-dom';
-import { Contacto, Emple, Footer, Header, Inicio, Productos } from './components/Pages/barril';
+import { Footer, Header} from './components/Pages';
 import { Grid } from '@material-ui/core';
 import { Rutas } from './components/interfaces/routes';
 

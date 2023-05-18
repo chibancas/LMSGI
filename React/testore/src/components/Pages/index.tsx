@@ -1,9 +1,8 @@
-
 import Logo from './../../assets/logo.png'
 export { Contacto } from "./Contacto/ContactoPage";
 export { Emple } from "./Empleados/EmplePage";
 export { Inicio } from "./Inicio/InicioPage";
-export { Productos } from "./Productos/ProductosPage";
+export { ProductosPage } from "./Productos/ProductosPage";
 export { Logo }
 export { conexiondb } from '../../FBConfig/FBProductos';
 export { Header } from '../Header/Header';

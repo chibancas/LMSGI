@@ -1,5 +1,5 @@
 import path from "path";
-import { Contacto, Emple, Inicio, Productos } from "../Pages/barril";
+import { Contacto, Emple, Inicio, ProductosPage } from "../Pages";
 
 type CHIBANCAS = () => JSX.Element;
 //CHBANCAS ES UNA VARIABLE QEU PUEDE TENER CUALQUIER NOMBRE
@@ -18,8 +18,8 @@ export const Rutas: Iruta[] = [
         name: 'Inicio'
     },
     {
-        component: Productos,
-        path: 'productos',
+        component: ProductosPage,
+        path: 'newproduct',
         name: 'Productos'
     },
     {
