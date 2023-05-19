@@ -128,6 +128,11 @@ export const ProductosPage = () => {
                     />
 
                     <CardContent>
+
+                    <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
+                        {productosolo.id}
+                      </Typography>
+
                       <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
                         {productosolo.nombre}
                       </Typography>
