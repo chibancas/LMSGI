@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif
   }
-
+/* 
   /* header {
     width: 100%;
     display: flex;
@@ -23,7 +23,7 @@
   }
 
   /*esto soolo funciona ids y clases*/
-  #menu:checked~.pako{
+  /* #menu:checked~.pako{
     width: 95%;
     display: flex;
     flex-flow: row wrap;
@@ -40,10 +40,10 @@
     border-radius: .5rem;
     padding: .3rem;
     font-weight: 900;
-  }
-  header input,header nav{
+  } */
+  /* header input,header nav{
     display: none;
-  }
+  } */
   /* header label {
     font-size: 2rem;
     margin: 1rem;
@@ -75,7 +75,7 @@
     border-radius: .8rem;
     color: black;
     font-weight: 900;
-  } */ */
+  } */ */ */
 
   main#productos {
     width: 100%;
