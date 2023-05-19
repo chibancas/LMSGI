@@ -8,6 +8,7 @@ interface Iruta {
     component: CHIBANCAS;
     path: string;
     name: string;
+    icon?: CHIBANCAS;
     children?: Iruta[]
 }
 
@@ -15,7 +16,8 @@ export const Rutas: Iruta[] = [
     {
         component: Inicio,
         path: '/',
-        name: 'Inicio'
+        name: 'Inicio',
+        // icon?: <FontAwesomeIcon icon="fa-duotone fa-house" beatFade />
     },
     {
         component: ProductosPage,

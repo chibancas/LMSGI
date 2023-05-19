@@ -68,7 +68,7 @@ export const Header = () => {
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
-            variant="h6"
+            variant="h3"
             noWrap
             component="a"
             href="/"
@@ -114,9 +114,10 @@ export const Header = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {Rutas.map(({ name, path }) => (
+              {Rutas.map(({ name, path,icon }) => (
                 <MenuItem key={path} onClick={handleCloseNavMenu}>
                   {/* <Typography textAlign="center">{name}1</Typography> */}
+                  {/* {icon} */}
                   <NavLink to={path}>
                     <span>
                       {name}

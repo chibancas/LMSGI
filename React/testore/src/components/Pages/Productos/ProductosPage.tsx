@@ -110,7 +110,7 @@ export const ProductosPage = () => {
   return (
     <main id='productos'>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} style={{ display: "flex", justifyContent: "center", backgroundColor: "darkblue", padding: "1rem" }}>
         {
           // listar productos
           productos.sort((a, b) => (a.precio > b.precio) ? 1 : ((b.precio > a.precio) ? -1 : 0)).map((productosolo) => {
@@ -124,7 +124,8 @@ export const ProductosPage = () => {
                       height="140"
                       image={productosolo.img}
                       alt="foto producto"
-                      style={{ objectFit: "contain", padding: ".3rem" }} />
+                      style={{ objectFit: "contain", padding: ".5rem", border: "solid 10px silver" }}
+                    />
 
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
@@ -133,6 +134,7 @@ export const ProductosPage = () => {
                       <Typography variant="body2" style={{ wordBreak: "break-word" }}>
                         {productosolo.descripcion}
                       </Typography>
+
                     </CardContent>
                   </CardActionArea>
 
@@ -168,8 +170,20 @@ export const ProductosPage = () => {
                 id="nombre"
                 label="Nombre del Producto"
                 type="text"
+                placeholder='MSI MEG Trident X2 13NUI-015ES Intel Core i9-13900KF...'
                 fullWidth
               />
+
+              <TextField
+                {...register("descripcion")}
+                id="descripcion"
+                label="Descripción del producto"
+                multiline
+                rows={3}
+                fullWidth
+                placeholder='Lleve sus experiencias de entretenimiento y creación de contenido al siguiente nivel....'
+              />
+
               <TextField
                 {...register("precio")}
                 autoFocus
@@ -177,6 +191,7 @@ export const ProductosPage = () => {
                 id="precio"
                 label="Precio del Producto"
                 type="number"
+                placeholder='6000'
                 fullWidth
               />
               <TextField
@@ -185,6 +200,7 @@ export const ProductosPage = () => {
                 margin="dense"
                 id="img"
                 label="Imagen (URL)"
+                placeholder='https://img.pccomponentes.com/articles/1058/10585068/1496-msi-meg-trident-x2-13nui-015es-intel-core-i9-13900kf-64gb-2tb-ssd-rtx4090.jpg'
                 type="text"
                 fullWidth
               />
