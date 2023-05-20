@@ -1,7 +1,8 @@
 export interface IProductos{
-    id: string;
+    codigo?: string;
+    id:string;
     nombre:string;
     descripcion:string;
     precio:number;
-    img?:string;
+    img:string;
 }

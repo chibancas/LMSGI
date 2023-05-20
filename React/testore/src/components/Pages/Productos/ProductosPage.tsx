@@ -65,11 +65,13 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import { TraerProductos, addproducto } from '../../../FBConfig/FBProductos';
+import { TraerProductos, addproducto, cargarprod } from '../../../FBConfig/FBProductos';
 import { IProductos } from '../../interfaces/productos';
 import { useForm } from 'react-hook-form';
-import { Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography } from '@material-ui/core';
-import { Alert, AlertTitle } from '@mui/material';
+import { Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, TableContainer, Typography } from '@material-ui/core';
+import Paper from '@mui/material/Paper'
+import { Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
+
 
 export const ProductosPage = () => {
   const [open, setOpen] = React.useState(false);
@@ -124,19 +126,19 @@ export const ProductosPage = () => {
                       height="140"
                       image={productosolo.img}
                       alt="foto producto"
-                      style={{ objectFit: "contain", padding: ".5rem", border: "solid 10px silver" }}
+                      style={{ objectFit: "contain", padding: "1rem", scale: "1.2" }}
                     />
 
                     <CardContent>
 
-                    <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
-                        {productosolo.id}
-                      </Typography>
+                      {/* <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
+                        {productosolo.codigo}
+                      </Typography> */}
 
-                      <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
+                      <Typography className='nombre' gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
                         {productosolo.nombre}
                       </Typography>
-                      <Typography variant="body2" style={{ wordBreak: "break-word" }}>
+                      <Typography className='descripcion' variant="body2" style={{ wordBreak: "break-word" }}>
                         {productosolo.descripcion}
                       </Typography>
 
@@ -146,7 +148,7 @@ export const ProductosPage = () => {
 
                   <CardActions>
                     <Button size="medium">
-                      <span id='precio'>
+                      <span className='precio'>
                         {productosolo.precio}
                       </span>
                     </Button>
@@ -157,7 +159,7 @@ export const ProductosPage = () => {
           })
         }
       </Grid>
-      <div>
+      <div id='add1prod'>
         <Button id='openform' variant="outlined" color="primary" onClick={handleClickOpen}>
           Añadir Producto
         </Button>
@@ -222,6 +224,7 @@ export const ProductosPage = () => {
 
         </Dialog>
       </div>
+      <Button variant='contained' onClick={cargarprod}>Cargar Datos</Button>
     </main>
   );
 }

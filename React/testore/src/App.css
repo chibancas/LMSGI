@@ -5,7 +5,8 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif
   }
-/* 
+
+  /* 
   /* header {
     width: 100%;
     display: flex;
@@ -58,12 +59,14 @@
     justify-content: center;
     padding: .3rem;
   } */
-  header label span{
+  header label span {
     width: 100%;
   }
-  header label i#ojo{
+
+  header label i#ojo {
     font-size: 1.5rem;
   }
+
   /* header nav a {
     text-decoration: none;
     font-size: 1.8rem;
@@ -75,9 +78,8 @@
     border-radius: .8rem;
     color: black;
     font-weight: 900;
-  } */ */ */
-
-  main#productos {
+  } */
+  */ */ main#productos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -85,12 +87,32 @@
     flex-flow: row wrap;
     gap: 1.5rem;
   }
-  main#productos button#openform{
+
+  main#productos button#openform {
     background-color: silver;
     color: black;
     font-weight: 900;
   }
-  main#productos span#precio::after {
+
+  .precio::after {
     content: " €";
+  }
+
+  .descripcion {
+    /* ayuda de francisco packet tracer */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+  }
+  .nombre {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
   }
 }

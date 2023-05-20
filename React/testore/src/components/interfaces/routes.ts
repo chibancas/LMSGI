@@ -1,8 +1,8 @@
-import path from "path";
+import { ReactNode } from "react";
 import { Contacto, Emple, Inicio, ProductosPage } from "../Pages";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
-
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { faHome, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { IconType } from "react-icons";
 
 type CHIBANCAS = () => JSX.Element;
 //CHBANCAS ES UNA VARIABLE QEU PUEDE TENER CUALQUIER NOMBRE
@@ -11,7 +11,6 @@ interface Iruta {
     component: CHIBANCAS;
     path: string;
     name: string;
-    icon?: CHIBANCAS;
     children?: Iruta[]
 }
 
@@ -20,27 +19,20 @@ export const Rutas: Iruta[] = [
         component: Inicio,
         path: '/',
         name: 'Inicio',
-        // icon?: <FontAwesomeIcon icon="fa-duotone fa-house" beatFade/>
     },
     {
         component: ProductosPage,
         path: 'newproduct',
-        name: 'Productos',
-        // icon?: <FontAwesomeIcon icon="fa-duotone fa-house" beatFade/>
-
+        name: 'Productos'
     },
     {
         component: Emple,
         path: 'empleados',
-        name: 'Empleados',
-        // icon?: <FontAwesomeIcon icon="fa-duotone fa-house" beatFade/>
-
+        name: 'Empleados'
     },
     {
         component: Contacto,
         path: 'contacto',
-        name: 'Contacto',
-        // icon?: <FontAwesomeIcon icon="fa-duotone fa-house" beatFade/>
-
+        name: 'Contacto'
     }
 ]

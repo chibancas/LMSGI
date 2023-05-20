@@ -4,6 +4,8 @@ import { firebaseConfig } from "./FBConfig";
 import { IProductos } from "../components/interfaces/productos";
 import { nanoid } from "nanoid";
 
+import lproductos from "./../datos/lproductos.json"
+
 //ahora se conecta la base de datos con la aplicación/projecto
 export const app = initializeApp(firebaseConfig) //importa las credenciales de FB
 export const conexiondb = getFirestore(app) //se conecta a la base de datos
@@ -30,7 +32,21 @@ export const addproducto = async (data: IProductos) => {
         const productRef = doc(conexiondb, "Ordenadores", nuevoDato.codigo);
         await setDoc(productRef, nuevoDato);
     }
-    catch (error){
+    catch (error) {
+        console.log(error)
+    }
+}
+
+
+export const cargarprod = async () => {
+    try {
+        console.log('carga de datos...');
+        lproductos.map(async (lproducto) => {
+            const docRef = doc(conexiondb, "Ordenadores", nanoid(20))
+            await setDoc(docRef, lproducto)
+            window.location.reload()
+        })
+    } catch (error) {
         console.log(error)
     }
 }
