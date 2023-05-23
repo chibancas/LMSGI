@@ -68,7 +68,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import { TraerProductos, addproducto, cargarprod } from '../../../FBConfig/FBProductos';
 import { IProductos } from '../../interfaces/productos';
 import { useForm } from 'react-hook-form';
-import { Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, TableContainer, Typography } from '@material-ui/core';
+import { Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, MenuItem, TableContainer, Typography } from '@material-ui/core';
 import Paper from '@mui/material/Paper'
 import { Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 
@@ -108,6 +108,27 @@ export const ProductosPage = () => {
       })
   }, [])
 
+  const TipoCpu = [
+    {
+      value: 'INTEL',
+      label: 'INTEL',
+    },
+    {
+      value: 'AMD',
+      label: 'AMD',
+    }
+  ];
+
+  const TipoRam = [
+    {
+      value: 'DDR4',
+      label: 'DDR4',
+    },
+    {
+      value: 'DDR5',
+      label: 'DDR5',
+    }
+  ];
 
   return (
     <main id='productos'>
@@ -115,7 +136,7 @@ export const ProductosPage = () => {
       <Grid container spacing={2} style={{ display: "flex", justifyContent: "center", backgroundColor: "darkblue", padding: "1rem" }}>
         {
           // listar productos
-          productos.sort((a, b) => (a.precio > b.precio) ? 1 : ((b.precio > a.precio) ? -1 : 0)).map((productosolo) => {
+          productos.sort((a, b) => (a.Precio > b.Precio) ? 1 : ((b.Precio > a.Precio) ? -1 : 0)).map((productosolo) => {
             //se ordenan los precios de los productos de menos a más.
             return (
               <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -136,10 +157,15 @@ export const ProductosPage = () => {
                       </Typography> */}
 
                       <Typography className='nombre' gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
-                        {productosolo.nombre}
+                        {productosolo.Nombre}
                       </Typography>
                       <Typography className='descripcion' variant="body2" style={{ wordBreak: "break-word" }}>
-                        {productosolo.descripcion}
+                        <li>
+                        {productosolo.codigo}
+                        </li>
+                        {productosolo.id},
+                        {productosolo.CPU},
+                        {productosolo.GPU}
                       </Typography>
 
                     </CardContent>
@@ -149,7 +175,7 @@ export const ProductosPage = () => {
                   <CardActions>
                     <Button size="medium">
                       <span className='precio'>
-                        {productosolo.precio}
+                        {productosolo.Precio}
                       </span>
                     </Button>
                   </CardActions>
@@ -169,9 +195,17 @@ export const ProductosPage = () => {
             <DialogContentText>
               Rellena los siguientes campos para añadir un nuevo producto.
             </DialogContentText>
-            <form onSubmit={handleSubmit(onaddNuevoPro)} noValidate autoComplete="off">
+            <form onSubmit={handleSubmit(onaddNuevoPro)} noValidate autoComplete="off" style={{display:"flex",gap:".5rem",flexFlow:"row wrap"}}>
               <TextField
-                {...register("nombre")}
+                {...register("id")}
+                id="id"
+                label="ID del Producto"
+                fullWidth
+                placeholder='1 o 12 o 2221...'
+              />
+
+              <TextField
+                {...register("Nombre")}
                 autoFocus
                 margin="dense"
                 id="nombre"
@@ -182,23 +216,21 @@ export const ProductosPage = () => {
               />
 
               <TextField
-                {...register("descripcion")}
-                id="descripcion"
-                label="Descripción del producto"
-                multiline
-                rows={3}
+                {...register("CPU")}
+                id="cpu"
+                label="CPU del equipo"
                 fullWidth
-                placeholder='Lleve sus experiencias de entretenimiento y creación de contenido al siguiente nivel....'
+                placeholder='INTEL PENTIUM...'
               />
 
               <TextField
-                {...register("precio")}
+                {...register("GPU")}
                 autoFocus
                 margin="dense"
                 id="precio"
-                label="Precio del Producto"
-                type="number"
-                placeholder='6000'
+                label="GPU del equipo"
+                type="string"
+                placeholder='RADEON RX 6700XT'
                 fullWidth
               />
               <TextField
@@ -209,7 +241,53 @@ export const ProductosPage = () => {
                 label="Imagen (URL)"
                 placeholder='https://img.pccomponentes.com/articles/1058/10585068/1496-msi-meg-trident-x2-13nui-015es-intel-core-i9-13900kf-64gb-2tb-ssd-rtx4090.jpg'
                 type="text"
+              />
+
+              <TextField
+                {...register("RAM")}
+                id="ram"
+                label="RAM del equipo"
+                type='number'
+                placeholder='16 o 32 o 8 o 128'
+              />
+
+              <TextField
+                {...register("cat")}
+                id="selectcpu"
+                select
+                label="AMD o INTEL?"
+                helperText='Procesador AMD o INTEL?'
+                style={{ width: "50wh" }}
+
+              >
+                {TipoCpu.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+
+              <TextField
+                {...register("TipoRam")}
+                id="selectram"
+                select
+                label="Generación RAM"
+                helperText='Generación RAM'
                 fullWidth
+              >
+                {TipoRam.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+
+              <TextField
+                {...register("Precio")}
+                id="precio"
+                label="Precio del equipo"
+                type='number'
+                placeholder='16 o 32 o 8 o 128'
               />
             </form>
           </DialogContent>
