@@ -1,4 +1,5 @@
 import Logo from './../../assets/logo.png'
+export { BackEnd } from './BackEnd/BackEnd';
 export { Contacto } from "./Contacto/ContactoPage";
 export { Emple } from "./Empleados/EmplePage";
 export { Inicio } from "./Inicio/InicioPage";

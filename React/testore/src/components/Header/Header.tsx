@@ -91,7 +91,7 @@ export const Header = () => {
             >
               {Rutas.map(({ name, path}) => (
                 <MenuItem key={path} onClick={handleCloseNavMenu}>
-                  <NavLink to={path} style={{textDecoration:"none"}}>
+                  <NavLink to={path}>
                     <span>
                       {name}
                     </span>

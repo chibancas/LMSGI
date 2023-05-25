@@ -160,9 +160,6 @@ export const ProductosPage = () => {
                         {productosolo.Nombre}
                       </Typography>
                       <Typography className='descripcion' variant="body2" style={{ wordBreak: "break-word" }}>
-                        <li>
-                        {productosolo.codigo}
-                        </li>
                         {productosolo.id},
                         {productosolo.CPU},
                         {productosolo.GPU}
