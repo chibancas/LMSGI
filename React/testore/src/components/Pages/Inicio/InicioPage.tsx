@@ -33,7 +33,6 @@ export const Inicio = () => {
           url="https://www.youtube.com/watch?v=hP08D38Yi3I"
         />
       </div>
-
     </main>
   )
 }

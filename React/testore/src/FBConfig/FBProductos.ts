@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { collection, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
 import { firebaseConfig } from "./FBConfig";
 import { IProductos } from "../components/interfaces/productos";
 import { nanoid } from "nanoid";
@@ -37,16 +37,33 @@ export const addproducto = async (data: IProductos) => {
     }
 }
 
-
+// carga masiva
 export const cargarprod = async () => {
     try {
         console.log('carga de datos...');
         lproductos.map(async (lproducto) => {
-            const docRef = doc(conexiondb, "Ordenadores", nanoid(20))
-            await setDoc(docRef, lproducto)
-            window.location.reload()
-        })
+            const codigo = nanoid(20);
+            const docRef = doc(conexiondb, "Ordenadores", codigo);
+            await setDoc(docRef, { codigo: codigo, ...lproducto });
+            window.location.reload();
+        });
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
+};
+
+
+// export const eliminarProducto = async (codigo: string) => {
+//     try {
+//         const productRef = doc(conexiondb, "Ordenadores", codigo);
+//         await deleteDoc(productRef);
+//         console.log("Producto eliminado correctamente");
+//     } catch (error) {
+//         console.log(error);
+//     }
+// };
+
+export const delproduct = async (codigo: string) => {
+    await deleteDoc(doc(conexiondb, "Ordenadores", codigo))
+    window.location.reload();
 }

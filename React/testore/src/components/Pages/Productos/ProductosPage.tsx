@@ -151,20 +151,18 @@ export const ProductosPage = () => {
                     />
 
                     <CardContent>
-
-                      {/* <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
-                        {productosolo.codigo}
-                      </Typography> */}
-
-                      <Typography className='nombre' gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
+                      <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
                         {productosolo.Nombre}
                       </Typography>
-                      <Typography className='descripcion' variant="body2" style={{ wordBreak: "break-word" }}>
-                        {productosolo.id},
-                        {productosolo.CPU},
-                        {productosolo.GPU}
+                      <Typography variant="body2" style={{ wordBreak: "break-word" }}>
+                        CPU: {productosolo.CPU}
                       </Typography>
-
+                      <Typography variant="body2" style={{ wordBreak: "break-word" }}>
+                        GPU: {productosolo.GPU}
+                      </Typography>
+                      <Typography className="ram" variant="body2" style={{ wordBreak: "break-word" }}>
+                        RAM: {productosolo.RAM}
+                      </Typography>
                     </CardContent>
                   </CardActionArea>
 
@@ -182,124 +180,6 @@ export const ProductosPage = () => {
           })
         }
       </Grid>
-      <div id='add1prod'>
-        <Button id='openform' variant="outlined" color="primary" onClick={handleClickOpen}>
-          Añadir Producto
-        </Button>
-        <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-          <DialogTitle id="form-dialog-title">Añadir Nuevo Producto</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              Rellena los siguientes campos para añadir un nuevo producto.
-            </DialogContentText>
-            <form onSubmit={handleSubmit(onaddNuevoPro)} noValidate autoComplete="off" style={{display:"flex",gap:".5rem",flexFlow:"row wrap"}}>
-              <TextField
-                {...register("id")}
-                id="id"
-                label="ID del Producto"
-                fullWidth
-                placeholder='1 o 12 o 2221...'
-              />
-
-              <TextField
-                {...register("Nombre")}
-                autoFocus
-                margin="dense"
-                id="nombre"
-                label="Nombre del Producto"
-                type="text"
-                placeholder='MSI MEG Trident X2 13NUI-015ES Intel Core i9-13900KF...'
-                fullWidth
-              />
-
-              <TextField
-                {...register("CPU")}
-                id="cpu"
-                label="CPU del equipo"
-                fullWidth
-                placeholder='INTEL PENTIUM...'
-              />
-
-              <TextField
-                {...register("GPU")}
-                autoFocus
-                margin="dense"
-                id="precio"
-                label="GPU del equipo"
-                type="string"
-                placeholder='RADEON RX 6700XT'
-                fullWidth
-              />
-              <TextField
-                {...register("img")}
-                autoFocus
-                margin="dense"
-                id="img"
-                label="Imagen (URL)"
-                placeholder='https://img.pccomponentes.com/articles/1058/10585068/1496-msi-meg-trident-x2-13nui-015es-intel-core-i9-13900kf-64gb-2tb-ssd-rtx4090.jpg'
-                type="text"
-              />
-
-              <TextField
-                {...register("RAM")}
-                id="ram"
-                label="RAM del equipo"
-                type='number'
-                placeholder='16 o 32 o 8 o 128'
-              />
-
-              <TextField
-                {...register("cat")}
-                id="selectcpu"
-                select
-                label="AMD o INTEL?"
-                helperText='Procesador AMD o INTEL?'
-                style={{ width: "50wh" }}
-
-              >
-                {TipoCpu.map((option) => (
-                  <MenuItem key={option.value} value={option.value}>
-                    {option.label}
-                  </MenuItem>
-                ))}
-              </TextField>
-
-              <TextField
-                {...register("TipoRam")}
-                id="selectram"
-                select
-                label="Generación RAM"
-                helperText='Generación RAM'
-                fullWidth
-              >
-                {TipoRam.map((option) => (
-                  <MenuItem key={option.value} value={option.value}>
-                    {option.label}
-                  </MenuItem>
-                ))}
-              </TextField>
-
-              <TextField
-                {...register("Precio")}
-                id="precio"
-                label="Precio del equipo"
-                type='number'
-                placeholder='16 o 32 o 8 o 128'
-              />
-            </form>
-          </DialogContent>
-          <DialogActions>
-            <Button onClick={handleClose} color="primary">
-              Salir
-            </Button>
-            <Button type='submit' onClick={handleSubmit(onaddNuevoPro)} color="primary">
-              Añadir Producto
-            </Button>
-          </DialogActions>
-
-        </Dialog>
-      </div>
-      <Button variant='contained' onClick={cargarprod}>Cargar Datos</Button>
     </main>
   );
 }

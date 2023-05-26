@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { BackEnd, Contacto, Emple, Inicio, ProductosPage } from "../Pages";
+import { BackEnd, Contacto, Emple, Inicio, Login, ProductosPage } from "../Pages";
 
 
 type CHIBANCAS = () => JSX.Element;
@@ -9,6 +9,7 @@ interface Iruta {
     component: CHIBANCAS;
     path: string;
     name?: string;
+    iden?:string;
     children?: Iruta[]
 }
 
@@ -34,7 +35,13 @@ export const Rutas: Iruta[] = [
         name: 'Contacto'
     },
     {
+        component: Login,
+        path: 'login',
+        name: 'Trastienda'
+    },
+    {
         component: BackEnd,
+        iden:'backend',
         path: 'backend',
         name: 'BackEnd'
     }

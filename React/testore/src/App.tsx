@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Main } from './components/Main/Main';
 import { Route, Routes } from 'react-router-dom';
-import { Footer, Header, ProductosPage } from './components/Pages';
+import { Header, ProductosPage } from './components/Pages';
 import { Grid } from '@material-ui/core';
 import { Rutas } from './components/interfaces/routes';
 
@@ -19,7 +19,6 @@ export const App = () => {
           ))
         }
       </Routes>
-      <Footer />
     </>
   )
 }

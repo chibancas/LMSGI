@@ -89,9 +89,9 @@ export const Header = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {Rutas.map(({ name, path}) => (
+              {Rutas.map(({ name, path, iden }) => (
                 <MenuItem key={path} onClick={handleCloseNavMenu}>
-                  <NavLink to={path}>
+                  <NavLink to={path} className={iden}>
                     <span>
                       {name}
                     </span>
@@ -120,8 +120,9 @@ export const Header = () => {
             TestStore
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {Rutas.map(({ name, path }) => (
+            {Rutas.map(({ name, path, iden }) => (
               <Button
+                className={iden}
                 key={path}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}

@@ -7,10 +7,11 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useEffect, useState } from 'react';
-import { TraerProductos, addproducto, cargarprod } from '../../../FBConfig/FBProductos';
+import { TraerProductos, addproducto, cargarprod, delproduct } from '../../../FBConfig/FBProductos';
 import { IProductos } from '../../interfaces/productos';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, MenuItem, TextField } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
+import { nanoid } from 'nanoid';
 
 
 
@@ -79,57 +80,9 @@ export const BackEnd = () => {
     ];
 
 
-
     return (
         <main id='backend'>
-            <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} aria-label="simple table" style={{ backgroundColor: "darkblue" }}>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">IMG</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ID</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">NOMBRE</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">CPU</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">GPU</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">RAM</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">Tipo de RAM</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ALMACENAMIENTO</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ALMACENAMIENTO SECUNDARIO</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">PSU</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ENFRIAMIENTO</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">CATEGORIA</TableCell>
-                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">PRECIO</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {productos.map((productosolo) => (
-                            <TableRow
-                                key={productosolo.codigo}
-                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                            >
-                                <TableCell align="center" className='fotopro'><img style={{ width: "10vw", filter: "" }} src={productosolo.img} alt={productosolo.Nombre} /></TableCell>
-                                <TableCell align="center">{productosolo.id}</TableCell>
-                                <TableCell align="center">{productosolo.Nombre}</TableCell>
-                                <TableCell align="center">{productosolo.CPU}</TableCell>
-                                <TableCell align="center">{productosolo.GPU}</TableCell>
-                                <TableCell align="center">{productosolo.RAM}</TableCell>
-                                <TableCell align="center">{productosolo.TipoRam}</TableCell>
-                                <TableCell align="center">{productosolo.Almacenamiento}</TableCell>
-                                <TableCell align="center">{productosolo.Almacenamiento2}</TableCell>
-                                <TableCell align="center">{productosolo.PSU}</TableCell>
-                                <TableCell align="center">{productosolo.ENFRIAMIENTO}</TableCell>
-                                <TableCell align="center">{productosolo.cat}</TableCell>
-                                <TableCell align="center">{productosolo.Precio}</TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-
-
-
-
-            </TableContainer>
-            <div id='add1prod'>
+                        <div id='add1prod'>
                 <Button id='openform' variant="outlined" color="primary" onClick={handleClickOpen}>
                     Añadir Producto
                 </Button>
@@ -248,6 +201,53 @@ export const BackEnd = () => {
             </div>
             <Button variant='contained' onClick={cargarprod}>Cargar Datos</Button>
 
+            <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 650 }} aria-label="simple table" style={{ backgroundColor: "white" }}>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">IMG</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ID</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">NOMBRE</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">CPU</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">GPU</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">RAM</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">Tipo de RAM</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ALMACENAMIENTO</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ALMACENAMIENTO SECUNDARIO</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">PSU</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ENFRIAMIENTO</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">CATEGORIA</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">PRECIO</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {productos.map((productosolo) => (
+                            <TableRow
+                                key={productosolo.codigo}
+                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                            >
+                                <TableCell align="center" className='fotopro'><img style={{ width: "10vw", filter: "" }} src={productosolo.img} alt={productosolo.Nombre} /></TableCell>
+                                <TableCell align="center">{productosolo.codigo}</TableCell>
+                                <TableCell align="center">{productosolo.Nombre}</TableCell>
+                                <TableCell align="center">{productosolo.CPU}</TableCell>
+                                <TableCell align="center">{productosolo.GPU}</TableCell>
+                                <TableCell align="center">{productosolo.RAM}</TableCell>
+                                <TableCell align="center">{productosolo.TipoRam}</TableCell>
+                                <TableCell align="center">{productosolo.Almacenamiento}</TableCell>
+                                <TableCell align="center">{productosolo.Almacenamiento2}</TableCell>
+                                <TableCell align="center">{productosolo.PSU}</TableCell>
+                                <TableCell align="center">{productosolo.ENFRIAMIENTO}</TableCell>
+                                <TableCell align="center">{productosolo.cat}</TableCell>
+                                <TableCell align="center">{productosolo.Precio}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+
+
+
+
+            </TableContainer>
         </main>
     );
 }
