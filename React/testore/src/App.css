@@ -97,8 +97,8 @@
     background-color: white;
   }
   .backend{
-    display: none;
-    height: 0
+    display: none !important;
+
   }
   .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
   display: none;
