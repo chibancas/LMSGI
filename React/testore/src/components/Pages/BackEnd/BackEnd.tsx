@@ -50,12 +50,19 @@ export const BackEnd = () => {
 
     const [productos, setproductos] = useState<IProductos[]>([])
     useEffect(() => {
-        TraerProductos()
-            .then(answer => {
-                console.log(...answer)
-                setproductos([...answer])
-            })
-    }, [])
+        TraerProductos().then((res) => {
+          console.log(...res);
+          setproductos([...res]);
+        });
+      }, []);
+    
+    // useEffect(() => {
+    //     TraerProductos()
+    //         .then(answer => {
+    //             console.log(...answer)
+    //             setproductos([...answer])
+    //         })
+    // }, [])
 
     const TipoCpu = [
         {
@@ -79,10 +86,15 @@ export const BackEnd = () => {
         }
     ];
 
+    const eliminar =()=>{
+        productos.map((productosolo)=>
+        productosolo.codigo)
+    }
+
 
     return (
         <main id='backend'>
-                        <div id='add1prod'>
+            <div id='add1prod'>
                 <Button id='openform' variant="outlined" color="primary" onClick={handleClickOpen}>
                     Añadir Producto
                 </Button>
@@ -239,6 +251,11 @@ export const BackEnd = () => {
                                 <TableCell align="center">{productosolo.ENFRIAMIENTO}</TableCell>
                                 <TableCell align="center">{productosolo.cat}</TableCell>
                                 <TableCell align="center">{productosolo.Precio}</TableCell>
+                                <TableCell align="center">
+                                    {/* <Button variant="contained" color="primary" onClick={(e) => { e.preventDefault(); abrirEditar(productosolo) }}></Button> */}
+                                    <Button onClick={() => productosolo.codigo && delproduct(productosolo.codigo)}>
+                                        <span>Borrar</span></Button>
+                                </TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
