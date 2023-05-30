@@ -2,7 +2,6 @@ import Logo from './../../assets/logo.png'
 export { Login } from './BackEnd/Login';
 export { BackEnd } from './BackEnd/BackEnd';
 export { Contacto } from "./Contacto/ContactoPage";
-export { Emple } from "./Empleados/EmplePage";
 export { Inicio } from "./Inicio/InicioPage";
 export { ProductosPage } from "./Productos/ProductosPage";
 export { Logo }

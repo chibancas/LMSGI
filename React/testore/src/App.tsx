@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Main } from './components/Main/Main';
 import { Route, Routes } from 'react-router-dom';
-import { Header, ProductosPage } from './components/Pages';
+import { BackEnd, Header, ProductosPage } from './components/Pages';
 import { Grid } from '@material-ui/core';
 import { Rutas } from './components/interfaces/routes';
 
@@ -18,6 +18,7 @@ export const App = () => {
             <Route path={path} key={path} element={<Component />} />
           ))
         }
+        <Route path='login/backend' element={<BackEnd/>}/>
       </Routes>
     </>
   )

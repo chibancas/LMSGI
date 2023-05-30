@@ -4,10 +4,13 @@ import { ProductosPage } from '../Productos/ProductosPage'
 export const Inicio = () => {
   return (
     <main id="home">
-      <h1>Bienvenido</h1>
+      <h1>Montamos Tu Futuro</h1>
 
       <p>
-        ¡Bienvenido a nuestra tienda de ordenadores gaming de sobremesa! Descubre una amplia selección de equipos potentes diseñados para los aficionados al gaming. Con tecnología de vanguardia y un rendimiento excepcional, nuestros ordenadores te sumergirán en emocionantes aventuras virtuales. Explora nuestra web y encuentra el ordenador perfecto para llevar tus habilidades de juego al siguiente nivel. ¡Estamos aquí para ayudarte a disfrutar de una experiencia de juego inigualable con nuestros ordenadores gaming de sobremesa de alta calidad!
+        ¡Bienvenidos a nuestra web de PCs Premium!
+        Aquí encontrarás la combinación perfecta entre rendimiento excepcional y diseño elegante.
+        Nos apasiona construir PCs a medida que se ajusten a tus necesidades y superen tus expectativas.
+        Sumérgete en nuestro mundo de tecnología de vanguardia y descubre cómo podemos llevar tu experiencia informática al siguiente nivel. ¡Explora, elige y prepárate para un viaje hacia la excelencia!
       </p>
     </main>
   )

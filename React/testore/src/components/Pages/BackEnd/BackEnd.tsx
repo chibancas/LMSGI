@@ -9,10 +9,12 @@ import Paper from '@mui/material/Paper';
 import { useEffect, useState } from 'react';
 import { TraerProductos, addproducto, cargarprod, delproduct } from '../../../FBConfig/FBProductos';
 import { IProductos } from '../../interfaces/productos';
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, MenuItem, TextField } from '@material-ui/core';
+import { Button, Card, CardActionArea, CardContent, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, MenuItem, TextField, Typography } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
-import { nanoid } from 'nanoid';
-
+import { TraerContacto } from '../../../FBConfig/FBContacto';
+import { IContacto } from '../../interfaces/contactos';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -20,7 +22,13 @@ import { nanoid } from 'nanoid';
 
 
 export const BackEnd = () => {
-
+    const [contactos, setcontactos] = useState<IContacto[]>([])
+    useEffect(() => {
+        TraerContacto().then((res) => {
+            console.log(...res);
+            setcontactos([...res]);
+        });
+    }, []);
 
 
     const [open, setOpen] = React.useState(false);
@@ -51,18 +59,11 @@ export const BackEnd = () => {
     const [productos, setproductos] = useState<IProductos[]>([])
     useEffect(() => {
         TraerProductos().then((res) => {
-          console.log(...res);
-          setproductos([...res]);
+            console.log(...res);
+            setproductos([...res]);
         });
-      }, []);
-    
-    // useEffect(() => {
-    //     TraerProductos()
-    //         .then(answer => {
-    //             console.log(...answer)
-    //             setproductos([...answer])
-    //         })
-    // }, [])
+    }, []);
+
 
     const TipoCpu = [
         {
@@ -85,11 +86,6 @@ export const BackEnd = () => {
             label: 'DDR5',
         }
     ];
-
-    const eliminar =()=>{
-        productos.map((productosolo)=>
-        productosolo.codigo)
-    }
 
 
     return (
@@ -212,8 +208,35 @@ export const BackEnd = () => {
                 </Dialog>
             </div>
             <Button variant='contained' onClick={cargarprod}>Cargar Datos</Button>
-
-            <TableContainer component={Paper}>
+            <Grid container spacing={2} style={{ display: "flex", justifyContent: "center", padding: "1rem" }}>
+                <h1 style={{width:"100%",textAlign:"center"}}>Datos Recibidos</h1>
+                {
+                    contactos.map((contactosolo) => {
+                        return (
+                            <Grid item xs={12} sm={6} md={4} lg={3}>
+                                <Card className='tarjetas' style={{backgroundColor:"darkblue"}}>
+                                    <CardContent>
+                                        <Typography className='desborde' gutterBottom variant="h5" component="div">
+                                            Nombre: {contactosolo.nombre}
+                                        </Typography>
+                                        <Typography className='desborde' gutterBottom variant="h5" component="div">
+                                            Correo: {contactosolo.correo}
+                                        </Typography>
+                                        <Typography className='desborde' gutterBottom variant="h5" component="div">
+                                            Teléfono: {contactosolo.tele}
+                                        </Typography>
+                                        <Typography className='desborde' gutterBottom variant="h5" component="div">
+                                            Comentarios: {contactosolo.descripcion}
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                        )
+                    })
+                }
+            </Grid>
+            <TableContainer component={Paper} id='tabla'>
+                <h1>Productos</h1>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table" style={{ backgroundColor: "white" }}>
                     <TableHead>
                         <TableRow>
@@ -230,6 +253,7 @@ export const BackEnd = () => {
                             <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">ENFRIAMIENTO</TableCell>
                             <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">CATEGORIA</TableCell>
                             <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">PRECIO</TableCell>
+                            <TableCell style={{ fontWeight: 500, letterSpacing: "1px" }} align="center">BORRADO</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -243,27 +267,25 @@ export const BackEnd = () => {
                                 <TableCell align="center">{productosolo.Nombre}</TableCell>
                                 <TableCell align="center">{productosolo.CPU}</TableCell>
                                 <TableCell align="center">{productosolo.GPU}</TableCell>
-                                <TableCell align="center">{productosolo.RAM}</TableCell>
+                                <TableCell className='ram' align="center">{productosolo.RAM}</TableCell>
                                 <TableCell align="center">{productosolo.TipoRam}</TableCell>
                                 <TableCell align="center">{productosolo.Almacenamiento}</TableCell>
                                 <TableCell align="center">{productosolo.Almacenamiento2}</TableCell>
                                 <TableCell align="center">{productosolo.PSU}</TableCell>
                                 <TableCell align="center">{productosolo.ENFRIAMIENTO}</TableCell>
                                 <TableCell align="center">{productosolo.cat}</TableCell>
-                                <TableCell align="center">{productosolo.Precio}</TableCell>
+                                <TableCell className='precio' align="center">{productosolo.Precio}</TableCell>
                                 <TableCell align="center">
-                                    {/* <Button variant="contained" color="primary" onClick={(e) => { e.preventDefault(); abrirEditar(productosolo) }}></Button> */}
-                                    <Button onClick={() => productosolo.codigo && delproduct(productosolo.codigo)}>
-                                        <span>Borrar</span></Button>
+                                    <Button style={{
+                                        fontSize:"1rem"
+                                    }} onClick={() => productosolo.codigo && delproduct(productosolo.codigo)}>
+                                    <FontAwesomeIcon icon={faTrash} beatFade />
+                                    </Button>
                                 </TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
                 </Table>
-
-
-
-
             </TableContainer>
         </main>
     );

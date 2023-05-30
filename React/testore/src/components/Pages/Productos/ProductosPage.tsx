@@ -133,7 +133,7 @@ export const ProductosPage = () => {
   return (
     <main id='productos'>
 
-      <Grid container spacing={2} style={{ display: "flex", justifyContent: "center", backgroundColor: "darkblue", padding: "1rem" }}>
+      <Grid container spacing={2} style={{ display: "flex", justifyContent: "center", backgroundColor: "darkblue", padding: "1rem"}}>
         {
           // listar productos
           productos.sort((a, b) => (a.Precio > b.Precio) ? 1 : ((b.Precio > a.Precio) ? -1 : 0)).map((productosolo) => {
@@ -141,8 +141,8 @@ export const ProductosPage = () => {
             return (
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 <Card className='tarjetas' style={{ backgroundColor: "silver" }}>
-                  <CardActionArea>
                     <CardMedia
+                      className='fotopro'
                       component="img"
                       height="140"
                       image={productosolo.img}
@@ -151,29 +151,26 @@ export const ProductosPage = () => {
                     />
 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
+                      <Typography className='desborde' gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
                         {productosolo.Nombre}
                       </Typography>
-                      <Typography variant="body2" style={{ wordBreak: "break-word" }}>
+                      <Typography className='desborde' variant="body2" style={{ wordBreak: "break-word" }}>
                         CPU: {productosolo.CPU}
                       </Typography>
-                      <Typography variant="body2" style={{ wordBreak: "break-word" }}>
+                      <Typography className='desborde' variant="body2" style={{ wordBreak: "break-word" }}>
                         GPU: {productosolo.GPU}
                       </Typography>
-                      <Typography className="ram" variant="body2" style={{ wordBreak: "break-word" }}>
+                      <Typography className="ram desborde" variant="body2" style={{ wordBreak: "break-word" }}>
                         RAM: {productosolo.RAM}
                       </Typography>
                     </CardContent>
-                  </CardActionArea>
 
 
-                  <CardActions>
                     <Button size="medium">
                       <span className='precio'>
                         {productosolo.Precio}
                       </span>
                     </Button>
-                  </CardActions>
                 </Card>
               </Grid>
             )

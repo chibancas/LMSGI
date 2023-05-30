@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { BackEnd, Contacto, Emple, Inicio, Login, ProductosPage } from "../Pages";
+import { BackEnd, Contacto, Inicio, Login, ProductosPage } from "../Pages";
 
 
 type CHIBANCAS = () => JSX.Element;
@@ -25,11 +25,6 @@ export const Rutas: Iruta[] = [
         name: 'Productos'
     },
     {
-        component: Emple,
-        path: 'empleados',
-        name: 'Empleados'
-    },
-    {
         component: Contacto,
         path: 'contacto',
         name: 'Contacto'
@@ -39,10 +34,10 @@ export const Rutas: Iruta[] = [
         path: 'login',
         name: 'Trastienda'
     },
-    {
-        component: BackEnd,
-        iden:'backend',
-        path: 'backend',
-        name: 'BackEnd'
-    }
+    // {
+    //     component: BackEnd,
+    //     iden:'backend',
+    //     path: 'backend',
+    //     name: 'BackEnd'
+    // }
 ]

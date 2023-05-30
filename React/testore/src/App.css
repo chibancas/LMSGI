@@ -10,98 +10,89 @@
     text-decoration: none;
   }
 
-  header label span {
-    width: 100%;
-  }
-
-  header label i#ojo {
-    font-size: 1.5rem;
-  }
-
-  main#home{
+  main#home {
+    background-image: url(./assets/foto-taller.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height: 93vh;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     padding: 1rem;
-    background-image: url("https://www.google.es/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3APersonal_Computer_Museum_%252825%2529%2C_Brantford%2C_Ontario%2C_2008-08-02.jpg&psig=AOvVaw1ldquf61lQIF6RV90sAluP&ust=1685526673544000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNjMsKfinP8CFQAAAAAdAAAAABAE");
-    gap: 1rem;
   }
   main#home h1{
-    align-self: flex-end;
-    width: 60vw;
-    padding: 3vh;
-    background-color: greenyellow;
     text-align: center;
-    font-size: 2.8rem;
-  }
-
-  main#home p{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: max-content;
     width: 60vw;
-    padding: 3vh;
-    background-color: greenyellow;
-    text-align: justify;
-    font-size: 2.5rem;
+    font-size: 10vmin;
+    padding: 1rem;
   }
-
+  main#home p{
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: max-content;
+    width: 60vw;
+    margin: 5rem;
+    font-size: 4.5vmin;
+    padding: 1rem;
+  }
   main#productos button#openform {
     background-color: silver;
     color: black;
     font-weight: 900;
   }
-  #iden{
+
+  #iden {
     display: none;
+  }
+
+  #tabla {
+    object-fit: cover;
+    width: 100vw !important;
+  }
+
+  main#backend {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: .5rem;
   }
 
   .precio::after {
     content: " €";
   }
-  .ram::after{
+
+  .ram::after {
     content: " GB";
   }
 
-  .descripcion {
-    /* ayuda de francisco packet tracer */
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
+  .desborde {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 1 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 
-  .nombre {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
-  }
-
-  #video {
-    z-index: -1 !important;
-    display: "flex";
-    justify-content: center;
-    flex-flow: row wrap;
-    background-color: darkblue;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-  }
-  .fotopro img{
+  .fotopro img {
     mix-blend-mode: multiply;
-    filter: brightness(1.5);
+    filter: brightness(1);
+  }
 
+  .fotopro {
+    mix-blend-mode: multiply;
+    filter: brightness(1);
   }
-  .fotopro{
-    background-color: white;
-  }
-  .backend{
+
+  .backend {
     display: none !important;
-
   }
-  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
-  display: none;
+
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    display: none;
   }
 }
