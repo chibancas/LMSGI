@@ -3,7 +3,7 @@ import { BackEnd, Contacto, Inicio, Login, ProductosPage } from "../Pages";
 
 
 type CHIBANCAS = () => JSX.Element;
-//CHBANCAS ES UNA VARIABLE QEU PUEDE TENER CUALQUIER NOMBRE
+//CHBANCAS ES UNA VARIABLE QUE PUEDE TENER CUALQUIER NOMBRE
 
 interface Iruta {
     component: CHIBANCAS;

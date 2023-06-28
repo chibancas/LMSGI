@@ -24,11 +24,9 @@
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     height: max-content;
-    font-size: 6vmin;
-    color: white;
-    font-size: 6vmax;
-    width: 90vw;
-    margin: 0 auto;
+    width: 60vw;
+    font-size: 10vmin;
+    padding: 1rem;
   }
 
   main#home p {
@@ -39,6 +37,8 @@
     font-size: 3vmax;
     height: max-content;
     padding: 1vw;
+    color: white;
+
   }
 
   main#productos button#openform {
@@ -91,10 +91,6 @@
   .fotopro {
     mix-blend-mode: multiply;
     filter: brightness(1);
-  }
-
-  .backend {
-    display: none !important;
   }
 
   .datacon {
