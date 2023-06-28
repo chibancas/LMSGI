@@ -92,9 +92,7 @@ export const Header = () => {
               {Rutas.map(({ name, path, iden }) => (
                 <MenuItem key={path} onClick={handleCloseNavMenu}>
                   <NavLink to={path} className={iden}>
-                    <span>
                       {name}
-                    </span>
                   </NavLink>
                 </MenuItem>
               ))}
@@ -122,15 +120,12 @@ export const Header = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {Rutas.map(({ name, path, iden }) => (
               <Button
-                className={iden}
                 key={path}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 <NavLink to={path}>
-                  <span>
                     {name}
-                  </span>
                 </NavLink>
 
               </Button>

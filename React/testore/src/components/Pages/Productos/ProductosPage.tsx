@@ -133,7 +133,7 @@ export const ProductosPage = () => {
   return (
     <main id='productos'>
 
-      <Grid container spacing={2} style={{ display: "flex", justifyContent: "center", backgroundColor: "darkblue", padding: "1rem"}}>
+      <Grid className='container' container spacing={2} style={{display: "flex", justifyContent: "center", backgroundColor: "darkblue", padding: "1rem"}}>
         {
           // listar productos
           productos.sort((a, b) => (a.Precio > b.Precio) ? 1 : ((b.Precio > a.Precio) ? -1 : 0)).map((productosolo) => {
@@ -160,7 +160,7 @@ export const ProductosPage = () => {
                       <Typography className='desborde' variant="body2" style={{ wordBreak: "break-word" }}>
                         GPU: {productosolo.GPU}
                       </Typography>
-                      <Typography className="ram desborde" variant="body2" style={{ wordBreak: "break-word" }}>
+                      <Typography className="ram desborde" variant="body2" style={{ wordBreak: "break-word"}}>
                         RAM: {productosolo.RAM}
                       </Typography>
                     </CardContent>

@@ -6,11 +6,11 @@ import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './pages/Home/Home';
 import { Fun } from './pages/Fun/Fun';
 import { Contact } from './pages/Contact/Contact';
-import { ServiciosPage } from './pages/servicios/Servicios';
-import { Web } from './pages/servicios/Web';
-import { Admin } from './pages/servicios/Admin';
-import { Momae } from './pages/servicios/Momae';
 import { Footer } from './structura/Footer/Footer';
+import { Momae } from './pages/Servicios/Momae';
+import { Admin } from './pages/Servicios/Admin';
+import { ServiciosPage } from './pages/Servicios/Servicios';
+import { Web } from './pages/Servicios/Web';
 
 
 export const App = () => {
