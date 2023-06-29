@@ -214,7 +214,7 @@ export const BackEnd = () => {
                     contactos.map((contactosolo) => {
                         return (
                             <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <Card className='tarjetas' style={{backgroundColor:"darkblue"}}>
+                                <Card style={{backgroundColor:"silver"}}>
                                     <CardContent>
                                         <Typography className='desborde' gutterBottom variant="h5" component="div">
                                             Nombre: {contactosolo.nombre}

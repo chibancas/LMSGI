@@ -34,10 +34,5 @@ export const Rutas: Iruta[] = [
         path: 'login',
         name: 'Trastienda'
     },
-    // {
-    //     component: BackEnd,
-    //     iden:'backend',
-    //     path: 'backend',
-    //     name: 'BackEnd'
-    // }
+
 ]
