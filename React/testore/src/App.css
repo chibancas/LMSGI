@@ -29,6 +29,7 @@
     width: 60vw;
     font-size: 10vmin;
     padding: 1rem;
+    color: white;
   }
   main#home p{
     text-align: justify;
@@ -38,6 +39,8 @@
     margin: 5rem;
     font-size: 4.5vmin;
     padding: 1rem;
+    color: white;
+
   }
   main#productos button#openform {
     background-color: silver;
@@ -86,10 +89,6 @@
   .fotopro {
     mix-blend-mode: multiply;
     filter: brightness(1);
-  }
-
-  .backend {
-    display: none !important;
   }
 
   .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
