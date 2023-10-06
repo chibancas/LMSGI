@@ -1,10 +1,10 @@
 const misDatos = [
     {
         Nombre: "Juan José",
-        Apellidos: "Fernández Fernández",
-        Edad:"19",
+        Apellidos: "Fernández",
+        Edad:"20",
         Localidad: "04620,Vera",
-        Estudios: "Primaria, ESO, CFGM SMR"
+        Estudios: "CFGM Sistemas Microinformáticos y Redes"
     }
 ]
 

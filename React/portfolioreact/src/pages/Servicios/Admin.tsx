@@ -40,7 +40,7 @@ export const Admin = () => {
             <img src={ftp} alt="Video creación de un servidor FTP" />
           </figure>
           <span>
-            Servidor de Correo
+            Servidor FTP
           </span>
         </NavLink>
 
@@ -49,7 +49,7 @@ export const Admin = () => {
             <img src={apache} alt="Video instalación de servidor Apache" />
           </figure>
           <span>
-            Servidor de Correo
+            Servidor Apache
           </span>
         </NavLink>
       </nav>
