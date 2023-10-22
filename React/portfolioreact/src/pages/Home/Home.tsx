@@ -1,5 +1,5 @@
 import React from 'react'
-import yo from './../../assets/lola.jpg'
+import yo from './../../assets/yo-ia.jpg'
 import { Datos } from './Misdatos'
 
 
